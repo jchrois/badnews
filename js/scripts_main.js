@@ -7,7 +7,21 @@
 
 		function init() {
 			scrollHandler();
-
+			
+			if ($('#scroller2').length) {
+				Draggable.create("#scroller2",  {
+				type:"scrollLeft", 
+				throwProps:true, 
+				edgeResistance:0.5,
+				dragClickables:true, 
+				/*snap: { 
+					x: function(endValue) { 
+						return Math.round(endValue / 500) * 500;
+					}
+				}*/
+				});
+			}
+			
 		}
 
 
@@ -43,22 +57,6 @@
 		  	}
 		});
 
-
-		var circles = $('.mouse-move');
-  
-		$(document).mousemove(function( event ) {
-		    
-		    var xPct = 50 - (event.pageX / window.innerWidth * 100);
-		    var yPct = 50 - (event.pageY / window.innerHeight * 100);
-		    
-		    console.log(xPct,yPct);
-		    
-			circles.each(function(i,el){
-		      var div = Number(circles.eq(i).data('offset'));
-		      circles.eq(i).css({transform: 'translateX('+ xPct / div +'%) translateY('+ yPct / div +'%)'})
-		  	});
-
-		});
 
 
 

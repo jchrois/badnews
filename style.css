@@ -178,10 +178,12 @@ h4 {
 	background: #CCCCCC;
 }
 
-.logo, .ring {
+.logo {
 	position: absolute;
     top: 50%; left: 50%;
     margin-right: 50%;
+    min-width: 100px; width: 50%;
+    min-height: 100px; height: 50%;
 
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -293,12 +295,32 @@ h4 {
 
 }
 
+
+#scroller2 {
+	height: 102%;
+	background-color: #000;
+	white-space: nowrap;
+}
+
+#scroller-inner {
+
+}
+
+#scroller2-wrap {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+
 .project-element {
-	display: block;
+	display: inline-block;
+	width: 300px;
 	height: 100%;
 	background-color: #eeeeee;
 	background-position: center;
 	background-size: cover;
+	margin-left: -4px;
 
 }
 
@@ -307,19 +329,19 @@ h4 {
 }
 
 .project-element h4 {
-	position: absolute;
-	top: 10%;
-	left: 50%;
+
 	background-color: #000;
 	color: #fff;
 	padding: 10px 20px 10px 20px;
 
-    -ms-transform: rotate(90deg) translate(-50%, 0); /* IE 9 */
-    -ms-transform-origin: left; /* IE 9 */
-    -webkit-transform: rotate(90deg) translate(-50%, 0); /* Chrome, Safari, Opera */
-    -webkit-transform-origin: left; /* Chrome, Safari, Opera */
+	/*
+    -ms-transform: rotate(90deg) translate(-50%, 0); 
+    -ms-transform-origin: left;
+    -webkit-transform: rotate(90deg) translate(-50%, 0); 
+    -webkit-transform-origin: left;
     transform: rotate(90deg) translate(-50%, 0);
     transform-origin: left;
+    */
 
 }
 
@@ -331,6 +353,21 @@ h4 {
 .project-element.alternate{
 	background-color: #ddd;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .embed-container { 
 		position: relative; 
@@ -350,7 +387,6 @@ h4 {
 	width: 100%;
 	height: 100%;
 }
-
 
 
 
@@ -419,6 +455,31 @@ h4 {
 
 	padding: 20px;
 	background-color: #eeeeee;
+}
+
+
+
+
+
+
+#scroller {
+	height: 300px;
+	background-color: #fff;
+	white-space: nowrap;
+}
+
+#scroller-wrap {
+	height: 280px;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.box {
+	background-color: #ff0000;
+	width: 500px; height: 300px;
+	display: inline-block;
+	margin-left: -4px;
 }
 
 
@@ -536,13 +597,7 @@ input:focus {
 .header {
 
 }
-/* logo */
-.logo {
 
-}
-.logo-img {
-
-}
 /* nav */
 .nav {
 

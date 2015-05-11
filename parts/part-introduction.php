@@ -9,8 +9,7 @@
 	<div class="row">
 		<div class="fullheight-content" style="background-image: url('<?php echo get_template_directory_uri() . "/img/_theme/citybg_v1.jpg" ?>')">
 			<div class="col-xs-12 col-md-6 col-md-offset-3 full-height">
-				<?php /* <img class="img-responsive ring spin" src="<?php echo get_template_directory_uri() . "/img/svg/ring.svg"; ?>" data-offset="-1"> */ ?>
-				<img class="img-responsive logo" src="<?php echo get_template_directory_uri() . "/img/svg/badnews_mark_v1.svg"; ?>" data-offset="-0.5">
+				<img class="logo img-responsive" src="<?php echo get_template_directory_uri() . '/img/svg/logo.svg'; ?>">
 			</div>
 
 		</div>
@@ -48,8 +47,6 @@
 <section class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12 video-box" style="background-image: url('<?php echo get_template_directory_uri() . "/img/dingy.png"; ?>');">
-		
-
 
 		</div>
 	</div>
