@@ -37,24 +37,14 @@
 			</div>
 					
 				<a href="<?php echo get_home_url(); ?>" class="nav-element">
-					<span>1</span><span>Home</span>
+					<span>Home</span>
 				</a>
 
 				<a href="#" class="nav-element">
-					<span>2</span><span>Projects</span>
+					<span>Projects</span>
 				</a>
 				<a href="#" class="nav-element">
-					<span>3</span><span>About</span>
-				</a>
-				<a href="#" class="nav-element">
-					<span>1</span><span>Introduction</span>
-				</a>
-
-				<a href="#" class="nav-element">
-					<span>2</span><span>Projects</span>
-				</a>
-				<a href="#" class="nav-element">
-					<span>3</span><span>About</span>
+					<span>About</span>
 				</a>
 
 		</nav>

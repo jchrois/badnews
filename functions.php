@@ -66,9 +66,11 @@ function styles()
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.2', 'all');
     wp_enqueue_style('bootstrap');
 
-
     wp_register_style('fonts', get_template_directory_uri() . '/fonts/font_stylesheet.css', array(), '1.0', 'all');
     wp_enqueue_style('fonts');
+
+    wp_register_style('fonts_google', 'http://fonts.googleapis.com/css?family=Fira+Mono', array(), '1.0', 'all');
+    wp_enqueue_style('fonts_google');
 
     wp_register_style('badnews', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('badnews');

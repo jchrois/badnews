@@ -1,9 +1,7 @@
 			<!-- footer -->
 			<footer class="container-fluid footer" role="contentinfo">
 				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright B A D N E W S Corp.
-				</p>
+				<p class="copyright"></p>
 				<!-- /copyright -->
 			</footer>
 			<!-- /footer -->

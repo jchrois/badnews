@@ -18,6 +18,7 @@
 
 						<div id="scroller2-wrap">
 							<div id="scroller2">
+								
 								<div id="scroller-inner" class="fullheight-content">
 								
 								<?php 

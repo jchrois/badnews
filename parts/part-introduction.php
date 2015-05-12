@@ -12,6 +12,8 @@
 				<img class="logo img-responsive" src="<?php echo get_template_directory_uri() . '/img/svg/logo.svg'; ?>">
 			</div>
 
+			<div class="introduction-txt col-xs-12 col-md-4 col-md-offset-4">BADNEWS is the thoughts, ideas, and design work of Jakob Chrøis / CPH / DK.</div>
+
 		</div>
 
 	</div>
