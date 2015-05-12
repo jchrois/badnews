@@ -15,6 +15,7 @@
 					
 					<!-- PROJECTS SCROLLER > -->
 					<div class="row full-height">
+
 						<div id="scroller2-wrap">
 							<div id="scroller2">
 								<div id="scroller-inner" class="fullheight-content">
