@@ -31,21 +31,20 @@
 		
 		<div id="preloader" style="background-image: url('<?php echo get_template_directory_uri() . "/img/preload.jpg"; ?>');"></div>
 		
-		<nav class="nav-container">
-			<div class="nav-bnt">
-				<img class="" src="<?php echo get_template_directory_uri() . "/img/svg/navbnt1.svg"; ?>">
-			</div>
-					
-				<a href="<?php echo get_home_url(); ?>" class="nav-element">
-					<span>Home</span>
-				</a>
 
-				<a href="#" class="nav-element">
-					<span>Projects</span>
-				</a>
-				<a href="#" class="nav-element">
-					<span>About</span>
-				</a>
+		<nav class="nav-container closed">
+
+			<div class="nav-bnt"></div>
+
+			<div class="nav-inner closed">
+
+				<div class="nav-inner-wrap">
+					<a href="<?php echo get_home_url(); ?>" class="nav-element"><h4>Home</h4></a>
+					<a href="#" class="nav-element"><h4>Projects</h4></a>
+					<a href="#" class="nav-element"><h4>About</h4></a>
+				</div>
+
+			</div>
 
 		</nav>
 

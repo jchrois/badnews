@@ -33,9 +33,13 @@ html {
 }
 
 body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color:#444;
-	background-color: #4A4A54;
+	/*font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+	
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+
+	color: #444;
+	background-color: #000;
 	margin: 0;
 
 }
@@ -72,11 +76,18 @@ div#preloader {
 }
 
 
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px; line-height: 40px;
+	font-weight: 500;
+}
+
 h4 {
 	font-size: 16px;
 	font-family: "uniformregular";
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	line-height: 24px;
 }
 
 
@@ -91,52 +102,102 @@ h4 {
 
 
 
+
+
+
+
+.icon-square {
+	width: 12px; height: 12px;
+	background-color: #EFE586;
+	display: block; float: left;
+	margin: 0px 10px 0px 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* NAV  > ---------------------------------------------------------- */
 
 
 .nav-container {
 	position: fixed;
-	top: 3%; right: 3%;
+	top: 4%; right: 3%;
+	width: 30px; height: 30px;
 	z-index: 99;
-
 }
 
 .nav-bnt {
-	position: relative;
-	width: 75px; height: 75px;
-	background-color: none;
+	position: absolute;
+	width: 30px; height: 30px;
 	z-index: 100;
 	cursor: pointer;
+	background-image: url('img/svg/nav.svg');
 }
 
-.nav-bnt img {
-	margin: 0 auto;
+.nav-inner {
+	position: absolute;
+	z-index: 90;
+	width: 200px;
+ 	right: 0;
+ 	
+ 	background:rgba(255, 255, 255, 0);
+ 	border: 2px solid #fff;
+ 	overflow: hidden;
+ 	
 }
+
+.nav-inner.closed {
+	width: 30px; height: 30px;
+}
+
+
+.nav-inner-wrap  {
+	padding: 50px 25px 25px 25px;
+ 	width: 100%; height: 175px;
+ 	
+}
+
 
 .nav-element {
 	display: block;
-	position: relative;
-	width: 75px; height: 80px;
-	padding-top: 30px;
-	margin-top: 20px;
-
+	float: left;
+	width: 100%; height: 20px;
+	margin-top: 10px;
 	color: #fff;
-	border: 2px solid #fff;
-	visibility: hidden;
-	text-align: center;
-	text-transform: uppercase;
+	text-align: right;
+	white-space: nowrap;
 
-	font-family: "uniformregular";
 }
+
+.nav-element h4 {
+	margin: 0;
+}
+
 
 
 .nav-element:hover {
-	color: #ff0000;
+	color: #000;
+	background: #fff;
 }
 
 .nav-element:active {
-	background-color: #000000;
-	color: #ffffff;
+	color: #000;
+}
+
+.nav-element:visited {
+	color: #fff;
+}
+
+.nav-element:link {
+
 }
 
 .nav-element:visited, .nav-element:link, .nav-element:active, .nav-element:hover {
@@ -144,21 +205,6 @@ h4 {
 }
 
 
-/*
-.nav-element span:first-child {
-	display: block;
-	float: left;
-	width: 20px; height: 20px;
-	text-align: center;
-	padding-top: 1.5px;
-
-	border: 1px solid;
-	border-radius: 50%;
-}
-*/
-
-.nav-element span {
-}
 
 /* NAV  < ---------------------------------------------------------- */
 
@@ -181,6 +227,11 @@ h4 {
 	background: #CCCCCC;
 }
 
+.introduction-hero {
+	background-image: url('img/_theme/citybg_v1.jpg');
+}
+
+
 .logo {
 	position: absolute;
     top: 50%; left: 50%;
@@ -200,13 +251,13 @@ h4 {
 	padding: 3%;
 }
 
+
 .intro-box-inner {
 	padding: 30px;
 	background:rgba(255, 255, 255,0.3);
 	color: #333;
 	overflow: hidden;
 }
-
 
 
 .introduction-txt {
@@ -216,8 +267,9 @@ h4 {
 	text-transform: uppercase;
 	padding: 40px;
 
-	font-family: 'notcouriersansregular';
 	letter-spacing: 1px;
+	font-size: 12px;
+	line-height: 24px
 
 }
 
@@ -226,6 +278,48 @@ h4 {
 
 
 
+
+.overlay-textbox {
+	position: absolute;
+	left: 5%; bottom: 7%;
+	z-index: 5;
+	background: #ccc;
+	width: 30px; height: 30px;
+	color: #fff;
+}
+
+.overlay-textbox-inner {
+	position: absolute;
+	width: 0; height: 0;
+	padding: 0;
+	overflow: hidden;
+
+	background:rgba(255, 255, 255, 0);
+	border: 2px solid #fff;
+}
+
+.overlay-textbox-inner.up { 
+	bottom: 0;
+}
+
+
+.overlay-textbox-inner.open {
+	width: 200px; height: 300px; 
+	padding: 30px;
+	background:rgba(255, 255, 255, 0);
+}
+
+
+.overlay-textbox-bnt {
+	width: 30px; height: 30px;
+	z-index: 6;
+	background: #EFE586;
+	position: absolute;
+	cursor: pointer;
+
+	background-image: url('img/svg/plus.svg');
+
+}
 
 
 
@@ -268,9 +362,7 @@ h4 {
 }
 
 .services-row p {
-	font-family: 'notcouriersansregular';
 	letter-spacing: 1px;
-	text-transform: uppercase;
 }
 
 .services-row img {
@@ -280,9 +372,10 @@ h4 {
 
 
 
-
-
 /* PART : INTRODUCTION < ---------------------------------------------------------- */
+
+
+
 
 
 
@@ -395,22 +488,66 @@ h4 {
 
 */
 
+/* PART : PROJECTS < ---------------------------------------------------------- */
 
 
-.single-project-text {
-	position: absolute;
-	bottom: 0;
-	width: 100%; height: 200px;
-	background-color: #fff;
+
+
+
+
+
+/* PART : SINGLE PROJECT > ---------------------------------------------------------- */
+
+
+.logo-small {
+	position: fixed;
+	z-index: 10;
+	
+	width: 75px; height: 75px;
+	left: 3%; top: 3%;
+	background-image: url('img/svg/logo.svg');
+	
 }
 
+.single-project-heroImage {
+	background-size: cover; 
+	background-position: center;
+	padding: 0;
 
+}
 
+.single-project-heroBorder {
+	position: absolute;
+	z-index: 3;
+	width: 100%; height: 100%;
+	border: 20px solid #fff;
 
+}
 
+.single-project-headerbox {
+	position: absolute;
+	z-index: 4;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+	padding: 30px 40px 70px 40px;
 
+}
 
+.openClose-bnt {
+	background: #EFE586;
+	width: 100px; height: 15px;
 
+}
+
+.single-project-headerbox .openClose-bnt {
+	margin: 30px 0px;
+	float: right;
+}
+
+.single-project-role {
+	letter-spacing: 1px;
+}
 
 
 
@@ -436,6 +573,7 @@ h4 {
 }
 
 
+/* PART : SINGLE PROJECT < ---------------------------------------------------------- */
 
 
 
@@ -443,8 +581,6 @@ h4 {
 
 
 
-
-/* PART : PROJECTS < ---------------------------------------------------------- */
 
 
 #contact {
@@ -644,20 +780,14 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
-	width:95%;
-	margin:0 auto;
-	position:relative;
+	
 }
 /* header */
 .header {
 
 }
 
-/* nav */
-.nav {
 
-}
 /* sidebar */
 .sidebar {
 
@@ -726,17 +856,17 @@ input:focus {
 \*------------------------------------*/
 
 ::selection {
-	background:#04A4CC;
+	background:#000;
 	color:#FFF;
 	text-shadow:none;
 }
 ::-webkit-selection {
-	background:#04A4CC;
+	background:#000;
 	color:#FFF;
 	text-shadow:none;
 }
 ::-moz-selection {
-	background:#04A4CC;
+	background:#000;
 	color:#FFF;
 	text-shadow:none;
 }

@@ -35,10 +35,12 @@
 
 								<?php if($products->have_posts()): while($products->have_posts()): $products->the_post();
 									$heroimage = get_field('hero_image');
-								?>
+								?>	
+											
 											<a href="<?php the_permalink() ?>" class="project-element" style="background-image: url('<?php echo $heroimage['url']; ?>');">
-												<div><h4><?php the_title(); ?></h4></div>
-											</a>
+												<?php /* <div><h4><?php the_title(); ?></h4></div> */ ?>
+											</a> 
+
 
 										<?php $counter++; ?>
 

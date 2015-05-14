@@ -1,18 +1,28 @@
 <?php 
 
-
-
 ?>
 
 <section id="introduction" class="container-fluid">
 
 	<div class="row">
-		<div class="fullheight-content" style="background-image: url('<?php echo get_template_directory_uri() . "/img/_theme/citybg_v1.jpg" ?>')">
+		<div class="fullheight-content introduction-hero">
+			
 			<div class="col-xs-12 col-md-6 col-md-offset-3 full-height">
 				<img class="logo img-responsive" src="<?php echo get_template_directory_uri() . '/img/svg/logo.svg'; ?>">
 			</div>
 
-			<div class="introduction-txt col-xs-12 col-md-4 col-md-offset-4">BADNEWS is the thoughts, ideas, and design work of Jakob Chrøis / CPH / DK.</div>
+			<div class="overlay-textbox hidden-xs">
+				<div class="overlay-textbox-bnt"></div>
+
+				<div class="overlay-textbox-inner up">
+					<h4>Design <br/>in motion</h4>
+					<p>There is no reality except the one contained within us. That is why so many people live such an unreal life. 
+					They take the images outside of them for reality and never allow the world within to assert itself.</p>
+				</div>
+
+			</div>
+
+			<div class="overlay-textbox-mobile visible-xs-*"></div>
 
 		</div>
 

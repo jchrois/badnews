@@ -26,7 +26,7 @@
 
 
 
-		/* event handlers > -------------------------------------------------- */
+		/* events > -------------------------------------------------- */
 
 		$(window).on('load resize', function() {
 			console.log(window.innerHeight);
@@ -49,53 +49,55 @@
 		}
 
 
-		$(".nav-bnt").click(nav_in);
-
-		$(document).on('click', function(event) {
-		 	if (!$(event.target).closest('.nav-container').length) {
-		   			nav_out();
-		  	}
-		});
 
 
-
-
+		$('.overlay-textbox-bnt').click(overlay_textbox_bnt_click);
 		
-
-
-		/* event handlers < -------------------------------------------------- */
-
-
-
-
-
-
-
-		var nav_open = false;
-
-		function nav_in() {
-			var nav = $(".nav-container");
-
-			if(!nav.hasClass("nav-open")) {
-				TweenMax.set(".nav-element", {clearProps:"all"});
-				TweenMax.set(".nav-element", {visibility: "visible"});
-				TweenMax.staggerFrom('.nav-element', 0.1, {alpha:0, yPercent:-100, scale:0.4, force3D:true, ease:Expo.easeinOut},0.1);
-				nav.toggleClass("nav-open");
-			}
+		function overlay_textbox_bnt_click() {
+			var box = $(this).parent();
 			
+			if($(box).hasClass('open')){ 
+				//close
+				TweenMax.to($(box).find(".overlay-textbox-inner"), 0.5, {className: '-=open', ease: Power3.easeInOut});
+				$(box).removeClass('open');
+				console.log("close");
 
-		}
-
-		function nav_out() {
-			var nav = $(".nav-container");
-			if(nav.hasClass("nav-open")) {	
-				nav.toggleClass("nav-open");
-				TweenMax.staggerTo('.nav-element', 0.2, {alpha:0,height:0, padding:0, margin:'0 auto', display:'none'},0.05);
+			} else {
+				//open
+				TweenMax.to($(box).find(".overlay-textbox-inner"), 0.5, {className: '+=open', ease: Power3.easeInOut});
+				$(box).addClass('open');
+				console.log("open");
 			}
+
 		}
 
 
 
+		$('.nav-bnt').click(nav_open);
+
+		function nav_open() {
+			var nav = $(this).parent();
+			
+			if($(nav).hasClass('closed')) {
+				//open
+				TweenMax.to($(nav).find(".nav-inner"), 0.5, {className: '-=closed', ease: Power3.easeInOut});
+				$(nav).removeClass('closed');
+				console.log("open");
+
+			} else {
+				//close
+				TweenMax.to($(nav).find(".nav-inner"), 0.5, {className: '+=closed', ease: Power3.easeInOut});
+				$(nav).addClass('closed');
+				console.log("close");
+
+			}
+
+		}
+
+
+
+
+		/* events < -------------------------------------------------- */
 
 
 
@@ -173,6 +175,7 @@
 
 
 
+
 		/* animation > -------------------------------------------------- */
 
 		function animateTxtBoxIn(elem) {
@@ -213,63 +216,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
 		/* animation < -------------------------------------------------- */
 
 
 
 
 
-
-
-
-
-
-
-
-
-		/*
-
-		var doc = document.documentElement;
-		var left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
-		var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-		$(window).on( "scroll", scrollHandler);
-
-		function scrollHandler() {
-			
-			doc = document.documentElement;
-			left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
-			top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-
-			var element = document.getElementsByClassName("box2")[0];
-			var rect = element.getBoundingClientRect();
-
-
-			var pct = rect.top / window.innerHeight;
-			var toggle = false;
-			if(pct<0.5&&pct>0.4&&!toggle) {
-				TweenMax.to(box2, 1, {left: "1000px"});
-			}
-
-
-			console.log(top);
-			console.log(pct);
-		}
-		*/
-
-
-
-
-
-		
 
 
 
