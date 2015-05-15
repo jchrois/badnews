@@ -16,9 +16,7 @@
 						<div class="single-project-heroBorder"></div>
 					</div>
 
-
 					<div class="single-project-headerbox">
-						
 							<div class="container-fluid">
 								<div class="row">
 									<div class="col-xs-6">
@@ -41,24 +39,15 @@
 										<p>There is no reality except the one contained within us. That is why so many people live such an unreal life. 
 										They take the images outside of them for reality and never allow the world within to assert itself.</p>
 									</div>
-
 								</div>
-
 							</div>
-
 					</div>
-
-					
-
-
-
-
-
 
 				</div>
 
 			</div>
 		</section>
+
 
 		<?php /*
 		<p><?php the_field('client'); ?></p>

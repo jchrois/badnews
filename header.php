@@ -32,19 +32,25 @@
 		<div id="preloader" style="background-image: url('<?php echo get_template_directory_uri() . "/img/preload.jpg"; ?>');"></div>
 		
 
+		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+		
 		<nav class="nav-container closed">
 
 			<div class="nav-bnt"></div>
-
 			<div class="nav-inner closed">
-
 				<div class="nav-inner-wrap">
-					<a href="<?php echo get_home_url(); ?>" class="nav-element"><h4>Home</h4></a>
-					<a href="#" class="nav-element"><h4>Projects</h4></a>
-					<a href="#" class="nav-element"><h4>About</h4></a>
+					<?php
+					wp_nav_menu( array(
+						'menu_class'     => 'nav-menu',
+						'theme_location' => 'primary',
+					) );
+					?>
 				</div>
-
 			</div>
 
 		</nav>
+
+		<?php endif; ?>
+
+		
 

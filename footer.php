@@ -1,3 +1,4 @@
+			
 			<!-- footer -->
 			<footer class="container-fluid footer" role="contentinfo">
 				<!-- copyright -->
@@ -8,7 +9,6 @@
 
 
 		<?php wp_footer(); ?>
-
 
 
 

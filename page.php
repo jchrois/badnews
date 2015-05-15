@@ -1,27 +1,41 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<section>
+<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-			<h1><?php the_title(); ?></h1>
 
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+		<section class="container-fluid" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<?php the_content(); ?>
-				<br class="clear">
-				<?php edit_post_link(); ?>
-			</article>
+			<div class="row">
+
+				<div class="fullheight-content single-page-section">
+
+					<div class="col-md-6">
+						<h1><?php the_title(); ?></h1>
+						<?php the_content(); ?>
+					</div>
+
+					<div class="col-md-6">
+						
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
 
 		<?php endwhile; ?>
 
-		<?php else: ?>
-			<article>
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-			</article>
-		<?php endif; ?>
+<?php else: ?>
+	<section>
+		<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+	</section>
 
-		</section>
-	</main>
+<?php endif; ?>
+
+
+
+<?php get_template_part('parts/part', 'contact'); ?>
+
 
 <?php get_footer(); ?>

@@ -38,7 +38,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 
-	color: #444;
+	color: #666;
 	background-color: #000;
 	margin: 0;
 
@@ -80,6 +80,13 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 36px; line-height: 40px;
 	font-weight: 500;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px; line-height: 36px;
+	font-weight: 500;
+	color: #fff;
 }
 
 h4 {
@@ -160,47 +167,55 @@ h4 {
 
 
 .nav-inner-wrap  {
-	padding: 50px 25px 25px 25px;
+	padding: 40px 25px 25px 25px;
  	width: 100%; height: 175px;
- 	
 }
 
+.nav-inner-wrap li {
+	padding: 0; margin: 0;
+}
 
-.nav-element {
+.nav-inner-wrap ul {
+	padding: 0; margin: 0;
+	list-style: none;
+}
+
+.nav-inner-wrap a  {
 	display: block;
 	float: left;
-	width: 100%; height: 20px;
-	margin-top: 10px;
+	width: 100%;
 	color: #fff;
 	text-align: right;
-	white-space: nowrap;
+	margin-top: 10px;
+
+	color: #fff;
+	font-size: 16px;
+	font-family: "uniformregular";
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 24px;
 
 }
 
-.nav-element h4 {
-	margin: 0;
-}
 
-
-
-.nav-element:hover {
+.nav-inner-wrap a:hover {
 	color: #000;
 	background: #fff;
 }
 
-.nav-element:active {
+.nav-inner-wrap a:active {
 	color: #000;
 }
 
-.nav-element:visited {
+.nav-inner-wrap a:visited {
 	color: #fff;
 }
 
-.nav-element:link {
+.nav-inner-wrap a:link {
 
 }
 
-.nav-element:visited, .nav-element:link, .nav-element:active, .nav-element:hover {
+.nav-inner-wrap a:visited, .nav-inner-wrap a:link, .nav-inner-wrap a:active, .nav-inner-wrap a:hover {
 	text-decoration: none;
 }
 
@@ -578,19 +593,56 @@ h4 {
 
 
 
+/* PART : SINGLE PAGE > ---------------------------------------------------------- */
+
+.single-page-section {
+	width: 100%; height: 100%;
+	padding: 50px;
+	background: #fff;
+}
+
+
+/* PART : SINGLE PAGE < ---------------------------------------------------------- */
 
 
 
-
-
-#contact {
+.contact-section {
+	padding-bottom: 70px;
 
 }
+
+
 
 .contact-box {
-	background: #EFE586;
-	width: 100%; height: 300px;
+	padding: 30px 30px 20px 50px;
 }
+
+.contact-box2 {
+	padding: 10px 50px 30px 50px;
+}
+
+
+.mail-bnt {
+	display: block;
+	background: #fff;
+	width: 200px; height: 35px;
+	padding: 10px;
+	cursor: pointer;
+	
+}
+
+.mail-bnt:hover, .mail-bnt:active, .mail-bnt:visited {
+	background-color: #EFE586;
+	text-decoration: none;
+} 
+
+
+
+
+
+
+
+
 
 
 .footer {
