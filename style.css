@@ -674,6 +674,49 @@ h4 {
 /* PART: TEST  > ---------------------------------------------------------- */
 
 
+
+
+
+.test-container {
+	position: relative;
+	background-color: #000;
+}
+
+
+.overlay-loop-container {
+	position: absolute;
+	top: 3%; left: 3%;
+	width: 200px; height: 50px;
+	overflow: hidden;
+
+}
+
+.overlay-loop-inner {
+	position: absolute;
+	left: -400px;
+	width: 800px; height: 50px;
+	background-image: url('img/svg/overlay-loop1.svg');
+	background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .txtbox1 {
 	position: relative;
 	width: 100%;
@@ -700,6 +743,8 @@ h4 {
 	padding: 20px;
 	background-color: #eeeeee;
 }
+
+
 
 
 

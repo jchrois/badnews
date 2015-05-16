@@ -21,7 +21,8 @@
 				}*/
 				});
 			}
-			
+
+
 		}
 
 
@@ -47,7 +48,6 @@
 			//scrollSpy(".spin", spinStart, spinStop);
 
 		}
-
 
 
 
@@ -93,6 +93,31 @@
 			}
 
 		}
+
+
+
+
+			TweenMax.to($(".overlay-loop-inner"), 5, {left: "+=400px", repeat: -1, ease: Linear.easeNone } );
+
+
+		
+			
+			
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
 
 
 

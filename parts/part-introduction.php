@@ -25,6 +25,12 @@
 
 			<div class="overlay-textbox-mobile visible-xs-*"></div>
 
+			<div class="overlay-loop-container hidden-xs">
+					<div class="overlay-loop-inner hidden-xs"></div>
+			</div>
+
+
+
 		</div>
 
 	</div>
