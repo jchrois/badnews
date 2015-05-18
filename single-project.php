@@ -19,13 +19,13 @@
 					<div class="single-project-headerbox">
 							<div class="container-fluid">
 								<div class="row">
-									<div class="col-xs-6">
+									<div class="col-sm-6">
 										<a href="<?php the_permalink() ?>">
 											<h1 class="display-titel"><?php the_title(); ?></h1>
 										</a>
 									</div>
 
-									<div class="col-xs-6">
+									<div class="col-xs-6 hidden-xs">
 										<div class="openClose-bnt"></div>
 									</div>
 								</div>

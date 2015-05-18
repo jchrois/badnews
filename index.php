@@ -5,7 +5,7 @@
 				
 		<?php get_template_part('parts/part', 'projects'); ?>
 
-		<?php get_template_part('parts/part', 'test'); ?>
+		<?php //get_template_part('parts/part', 'test'); ?>
 
 		<?php //get_template_part('parts/part', 'test2'); ?>
 

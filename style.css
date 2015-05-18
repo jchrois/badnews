@@ -68,6 +68,15 @@ body {
 	height: 20%;
 }
 
+.no-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+
+
+
 
 div#preloader { 
 	position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; 
@@ -420,51 +429,60 @@ h4 {
 
 }
 
+.project-titelbar h3 {
+	position: absolute;
+	top: 19%;
+	margin: 0;
 
-#scroller2 {
-	height: 102%;
-	background-color: #000;
+	left: 57%;
+
+     -ms-transform: rotate(90deg); /* IE 9 */
+    -ms-transform-origin: 0% 0%; /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 0% 0%; /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+
+}
+
+
+
+
+.projects-container {
+	height: 100%;
+	width: 100%;
+	margin: 0; padding: 0;
+	overflow: hidden;
 	white-space: nowrap;
 }
 
-#scroller2-wrap {
+
+.projects-inner {
+	position: relative;
+	top: 20px;
+	width: 100%; height: 100%;
+	background-color: #111;
+	overflow-x: visible;
+}
+
+
+.projects-inner div {
 	height: 100%;
-	width: 100%;
-	overflow: hidden;
 }
 
 
 .project-element {
 	display: inline-block;
-	width: 300px;
-	height: 100%;
-	background-color: #eeeeee;
+	margin-left: -4px;
+	width: 200px; height: 100%;
 	background-position: center;
 	background-size: cover;
-	margin-left: -4px;
 
 }
+
 
 .project-element:hover {
-	background-color: #ffffff;
-}
-
-.project-element h4 {
-	position: absolute;
-	top: 50%;
-
-	background-color: #000;
-	color: #fff;
-	padding: 10px 20px 10px 20px;
-
-	/*
-    -ms-transform: rotate(90deg) translate(-50%, 0); 
-    -ms-transform-origin: left;
-    -webkit-transform: rotate(90deg) translate(-50%, 0); 
-    -webkit-transform-origin: left;
-    transform: rotate(90deg) translate(-50%, 0);
-    transform-origin: left;
-    */
+	text-decoration: none;
 
 }
 
@@ -473,35 +491,28 @@ h4 {
 	color: #4A4A54;
 }
 
-.project-element.alternate{
-	background-color: #ddd;
+
+.project-element h4 {
+	position: relative;
+	top: 5%; left: 50px;
+	width: 350px; height: 50px;
+	padding: 13px 30px 10px 30px;
+	background: #fff;
+
+	 -ms-transform: rotate(90deg); /* IE 9 */
+    -ms-transform-origin: 0% 0%; /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 0% 0%; /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+
 }
 
 
 
 
 
-/* FLEX BOX
-  
-.wrap{
-  background-color:blue;
-  width: 500px;
-  height: 200px;
-  display: flex;
-  flex-wrap:nowrap;
-  overflow:auto;
-}
 
-.content{
-  display: block ;
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  border: 1px solid green;
-  flex:1 0 200px;
-}
-
-*/
 
 /* PART : PROJECTS < ---------------------------------------------------------- */
 

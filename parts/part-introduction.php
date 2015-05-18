@@ -25,10 +25,11 @@
 
 			<div class="overlay-textbox-mobile visible-xs-*"></div>
 
+			<?php /*
 			<div class="overlay-loop-container hidden-xs">
 					<div class="overlay-loop-inner hidden-xs"></div>
 			</div>
-
+			*/ ?>
 
 
 		</div>
@@ -60,14 +61,5 @@
 				<h4>Games</h4>
 				<p>Art direction<br />Identity<br />Menus and UI</p>
 			</div>
-	</div>
-</section>
-
-
-<section class="container-fluid">
-	<div class="row">
-		<div class="col-xs-12 video-box" style="background-image: url('<?php echo get_template_directory_uri() . "/img/dingy.png"; ?>');">
-
-		</div>
 	</div>
 </section>

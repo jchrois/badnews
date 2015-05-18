@@ -8,20 +8,17 @@
 		function init() {
 			scrollHandler();
 			
-			if ($('#scroller2').length) {
-				Draggable.create("#scroller2",  {
+			if ($('.projects-inner').length) {
+				Draggable.create(".projects-inner",  {
 				type:"scrollLeft", 
 				throwProps:true, 
 				edgeResistance:0.5,
-				dragClickables:true, 
-				/*snap: { 
-					x: function(endValue) { 
-						return Math.round(endValue / 500) * 500;
-					}
-				}*/
+				dragClickables:true,
 				});
-			}
 
+				$('.projects-inner').css('overflowX', 'visible');
+			}
+			
 
 		}
 
