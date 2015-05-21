@@ -16,31 +16,41 @@
 						<div class="single-project-heroBorder"></div>
 					</div>
 
-					<div class="single-project-headerbox">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-sm-6">
-										<a href="<?php the_permalink() ?>">
-											<h1 class="display-titel"><?php the_title(); ?></h1>
-										</a>
+					<div class="headerbox-bnt"></div>
+					
+
+					<div class="single-project-headerbox-container">
+						
+						<div class="single-project-headerbox">
+
+
+
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-sm-6">
+											<a href="<?php the_permalink() ?>">
+												<h1 class="display-titel"><?php the_title(); ?></h1>
+											</a>
+										</div>
+
+										<div class="col-xs-6 hidden-xs">
+											<div class="openClose-bnt"></div>
+										</div>
 									</div>
 
-									<div class="col-xs-6 hidden-xs">
-										<div class="openClose-bnt"></div>
+									<div class="row">
+										<div class="col-sm-6 single-project-role">
+											<span class="icon-square"></span><p>Art direction / styleframes / motion graphics</p>
+										</div>
+
+										<div class="col-sm-6">
+											<p>There is no reality except the one contained within us. That is why so many people live such an unreal life. 
+											They take the images outside of them for reality and never allow the world within to assert itself.</p>
+										</div>
 									</div>
 								</div>
+						</div>
 
-								<div class="row">
-									<div class="col-sm-6 single-project-role">
-										<span class="icon-square"></span><p>Art direction / styleframes / motion graphics</p>
-									</div>
-
-									<div class="col-sm-6">
-										<p>There is no reality except the one contained within us. That is why so many people live such an unreal life. 
-										They take the images outside of them for reality and never allow the world within to assert itself.</p>
-									</div>
-								</div>
-							</div>
 					</div>
 
 				</div>

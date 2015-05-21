@@ -94,7 +94,40 @@
 
 
 
-			TweenMax.to($(".overlay-loop-inner"), 5, {left: "+=400px", repeat: -1, ease: Linear.easeNone } );
+
+		$('.headerbox-bnt').click(headerbox_bnt_click);
+		
+		function headerbox_bnt_click() {
+
+			var box = $(".single-project-headerbox");
+			
+			if($(box).hasClass('open')){ 
+				//close
+				TweenMax.to($(box), 0.5, {className: '-=open', ease: Power3.easeInOut});
+				//$(box).removeClass('open');
+				console.log("close");
+
+			} else {
+				//open
+				TweenMax.to($(box), 0.5, {className: '+=open', ease: Power3.easeInOut});
+				//$(box).addClass('open');
+				console.log("open");
+			}
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+		TweenMax.to($(".overlay-loop-inner"), 5, {left: "+=400px", repeat: -1, ease: Linear.easeNone } );
 
 
 		
