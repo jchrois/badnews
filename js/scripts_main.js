@@ -148,11 +148,15 @@
 		}
 
 
-		TweenMax.staggerFrom($(".logo-part"), 3, {opacity: 0, delay: 0.1, ease:Cubic.easeInOut, force3D:true}, 0.3);
+		TweenMax.staggerFrom($(".logo-part"), 3, {opacity: 0, delay: 0.3, ease:Cubic.easeInOut, force3D:true}, 0.3);
+		TweenMax.staggerFrom($(".detail-txt"), 2, {opacity: 0, backgroundColor: "#ffffff", width: 0, delay: 0, ease:Power4.easeInOut, force3D:true}, 0.1);
+		TweenMax.from($('.overlay-textbox'), 2.5, {opacity: 0, backgroundColor: "#ffffff", delay: 1.5, ease:Power4.easeInOut, force3D:true});
 
-		TweenMax.from($(".logo-p02"), 3600, {rotation: "+=360", delay: 1, repeat: -1, ease: Linear.easeNone, force3D:true });
-		TweenMax.from($(".logo-p03"), 360, {rotation: "-=360",  delay: 1, repeat: -1, ease: Linear.easeNone, force3D:true });
-		TweenMax.from($(".logo-p04"), 60, {rotation: "+=360",  delay: 1, repeat: -1, ease: Linear.easeNone, force3D:true });
+		TweenMax.from($(".logo-p02"), 3600, {rotation: "+=360", delay: 0.3, repeat: -1, ease: Linear.easeNone, force3D:true });
+		TweenMax.from($(".logo-p03"), 360, {rotation: "-=360",  delay: 0.3, repeat: -1, ease: Linear.easeNone, force3D:true });
+		TweenMax.from($(".logo-p04"), 60, {rotation: "+=360",  delay: 0.3, repeat: -1, ease: Linear.easeNone, force3D:true });
+
+
 
 		wiggle($(".overlay-smoke-inner"));
 		wiggle($(".overlay-noise-inner"));

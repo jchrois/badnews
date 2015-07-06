@@ -19,7 +19,7 @@
 
 	<body <?php body_class(); ?>>
 		
-		<div id="preloader" style="background-image: url('<?php echo get_template_directory_uri() . "/img/preload.jpg"; ?>');"></div>
+		<div id="preloader"></div>
 		
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>

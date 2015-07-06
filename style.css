@@ -91,7 +91,7 @@ canvas {
 div#preloader { 
 	position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; 
 	overflow: visible; 
-	background: #fff no-repeat center center; 
+	background:  #fff no-repeat center center url('img/preload.jpg'); 
 }
 
 
@@ -117,21 +117,7 @@ h4 {
 }
 
 
-.detail-txt {
-	font-size: 12px;
-	color: #ffffff;
-	font-family: "notcouriersansregular";
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 24px;
-}
 
-
-@media (max-width: 480px) { 
-   .detail-txt {
-   		font-size: 8px;
-   }
-}
 
 
 
@@ -192,6 +178,7 @@ h4 {
 	z-index: 90;
 	width: 200px;
  	right: 0;
+ 	white-space: nowrap;
  	
  	background:rgba(255, 255, 255, 0);
  	border: 2px solid #fff;
@@ -246,7 +233,7 @@ h4 {
 }
 
 .nav-inner-wrap a:visited {
-	color: #fff;
+	
 }
 
 .nav-inner-wrap a:link {
@@ -325,10 +312,11 @@ h4 {
 	position: absolute;
 	width: 30px; height: 30px;
 	padding: 0;
+	white-space: nowrap;
 	overflow: hidden;
 
 	background:rgba(255, 255, 255, 1);
-	border: 2px solid #fff;
+	border: 0.5px solid #fff;
 }
 
 .overlay-textbox-inner.up { 
@@ -337,9 +325,9 @@ h4 {
 
 
 .overlay-textbox-inner.open {
-	width: 500px; height: 200px; 
+	width: 400px; height: 225px; 
 	padding: 30px;
-	background:rgba(255, 255, 255, 0);
+	background:rgba(255, 255, 255, 0.03);
 }
 
 
@@ -426,11 +414,35 @@ h4 {
 	overflow: hidden;
 }
 
+.detail-txt {
+	font-size: 12px;
+	color: #ffffff;
+	font-family: "notcouriersansregular";
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 24px;
+
+	white-space: nowrap;
+	overflow: hidden;
+
+	padding: 0 0 6px 10px;
+
+}
+
+
+@media (max-width: 480px) { 
+   .detail-txt {
+   		font-size: 8px;
+   }
+}
+
+
 .detail-txt-01 {
 	position: absolute;
 	top: 19%; left: 5%;
 	width: 150px; height: 30px;
 	margin-left: 30px;
+
 }
 
 .detail-txt-02 {
@@ -438,6 +450,7 @@ h4 {
 	top: 57%; left: 5%;
 	width: 150px; height: 30px;
 	margin-left: 30px;
+
 }
 
 .detail-txt-03 {
@@ -450,6 +463,7 @@ h4 {
 	position: absolute;
 	top: 57%; left: 95%;
 	width: 150px; height: 30px;
+
 }
 
 .vertical-txt-down {

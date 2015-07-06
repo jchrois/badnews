@@ -38,8 +38,8 @@
 
 				<div class="overlay-textbox-inner up">
 					<h4>Design <br/>in motion</h4>
-					<p>There is no reality except the one contained within us. That is why so many people live such an unreal life. 
-					They take the images outside of them for reality and never allow the world within to assert itself.</p>
+					<p>There is no reality except the one contained within us.<br /> That is why so many people live such an unreal life.<br /> 
+					They take the images outside of them for reality<br /> and never allow the world within to assert itself.</p>
 				</div>
 
 			</div>
