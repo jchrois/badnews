@@ -8,9 +8,30 @@
 		
 		<div class="fullheight-content introduction-hero">
 			
-			<div class="col-xs-12 col-md-6 col-md-offset-3 full-height">
-				<img class="logo img-responsive" src="<?php echo get_template_directory_uri() . '/img/svg/logo.svg'; ?>">
+
+			<?php /*
+			<div class="threejs_canvas_01"></div>
+			*/ ?>
+
+
+			<div class="detail-txt-container">
+				<div class="detail-txt detail-txt-01 vertical-txt-down">DIGITAL DESIGN</div>
+				<div class="detail-txt detail-txt-02 vertical-txt-down">MOTION GRAPHICS</div>
+				<div class="detail-txt detail-txt-03 vertical-txt-up">BAD NEWS AGENCY</div>
+				<div class="detail-txt detail-txt-04 vertical-txt-up">00 : 00 : 00</div>
 			</div>
+
+			<div class="col-xs-12 col-md-6 col-md-offset-3 full-height">
+
+				<div class="logo-container">
+					<img class="logo-p01 logo-part" src="<?php echo get_template_directory_uri() . '/img/svg/logo_split/logo_split-01.svg'; ?>">
+					<img class="logo-p02 logo-part" src="<?php echo get_template_directory_uri() . '/img/svg/logo_split/logo_split-02.svg'; ?>">
+					<img class="logo-p03 logo-part" src="<?php echo get_template_directory_uri() . '/img/svg/logo_split/logo_split-03.svg'; ?>">
+					<img class="logo-p04 logo-part" src="<?php echo get_template_directory_uri() . '/img/svg/logo_split/logo_split-04.svg'; ?>">
+				</div>
+
+			</div>
+
 
 			<div class="overlay-textbox hidden-xs">
 				<div class="overlay-textbox-bnt"></div>
@@ -25,11 +46,14 @@
 
 			<div class="overlay-textbox-mobile visible-xs-*"></div>
 
-			<?php /*
-			<div class="overlay-loop-container hidden-xs">
-					<div class="overlay-loop-inner hidden-xs"></div>
+
+			<div class="overlay-smoke hidden-xs">
+					<div class="overlay-smoke-inner hidden-xs"></div>
 			</div>
-			*/ ?>
+
+			<div class="overlay-noise hidden-xs">
+					<div class="overlay-noise-inner hidden-xs"></div>
+			</div>
 
 
 		</div>

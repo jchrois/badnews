@@ -31,15 +31,17 @@ function header_scripts()
         wp_enqueue_script('bootstrap');
 
 
+
+
         wp_register_script('throwprops', get_template_directory_uri() . '/js/lib/greensock/plugins/ThrowPropsPlugin.min.js', array(), '1.16.1'); 
         wp_enqueue_script('throwprops');
-
 
         wp_register_script('draggable', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/utils/Draggable.min.js', array(), '1.16.0'); 
         wp_enqueue_script('draggable');
 
         wp_register_script('tweenmax', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js', array(), '1.16.0'); 
         wp_enqueue_script('tweenmax');
+
 
 
 

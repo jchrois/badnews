@@ -1,11 +1,11 @@
 <?php 
 
-
-
-
 ?>
 
+<section id="test2" class="container-fluid">
+	<div class="row">
 
 
-<div id="3D_c1"></div>
-
+		
+	</div>
+</section>

@@ -2,7 +2,7 @@
 	
 	$(function () {
 		
-
+		
 		init();
 
 		function init() {
@@ -56,12 +56,14 @@
 			if($(box).hasClass('open')){ 
 				//close
 				TweenMax.to($(box).find(".overlay-textbox-inner"), 0.5, {className: '-=open', ease: Power3.easeInOut});
+				TweenMax.to($(box).find(".overlay-textbox-bnt"), 0.5, {className: '-=open', ease: Power3.easeInOut});
 				$(box).removeClass('open');
 				console.log("close");
 
 			} else {
 				//open
 				TweenMax.to($(box).find(".overlay-textbox-inner"), 0.5, {className: '+=open', ease: Power3.easeInOut});
+				TweenMax.to($(box).find(".overlay-textbox-bnt"), 0.5, {className: '+=open', ease: Power3.easeInOut});
 				$(box).addClass('open');
 				console.log("open");
 			}
@@ -120,17 +122,72 @@
 
 
 
+		/* Introduction block  ---------------------------------------------------------- */
+
+
+	
+
+		startTime();
+
+
+		function startTime() {
+		    var today=new Date();
+		    var h=today.getHours();
+		    var m=today.getMinutes();
+		    var s=today.getSeconds();
+		    m = checkTime(m);
+		    s = checkTime(s);
+		    $('.detail-txt-04').html(h+" : "+m+" : "+s);
+
+		    var t = setTimeout(function(){startTime()},500);
+		}
+
+		function checkTime(i) {
+		    if (i<10) {i = "0" + i};
+		    return i;
+		}
+
+
+		TweenMax.staggerFrom($(".logo-part"), 3, {opacity: 0, delay: 0.1, ease:Cubic.easeInOut, force3D:true}, 0.3);
+
+		TweenMax.from($(".logo-p02"), 3600, {rotation: "+=360", delay: 1, repeat: -1, ease: Linear.easeNone, force3D:true });
+		TweenMax.from($(".logo-p03"), 360, {rotation: "-=360",  delay: 1, repeat: -1, ease: Linear.easeNone, force3D:true });
+		TweenMax.from($(".logo-p04"), 60, {rotation: "+=360",  delay: 1, repeat: -1, ease: Linear.easeNone, force3D:true });
+
+		wiggle($(".overlay-smoke-inner"));
+		wiggle($(".overlay-noise-inner"));
+
+		function wiggle(selector){
+		  $(selector).each(function() {
+		    wiggleProp(this, 'opacity', 0.3, 1);
+		    wiggleProp(this, 'top', 0, 100);
+		    wiggleProp(this, 'left', 0, 100);
+		  })
+		}
+
+		function wiggleProp(element, prop, min, max) {
+		  var duration = Math.random() * (.6 - .3) + 10;
+		  
+		  var tweenProps = {
+		    ease: Power1.easeInOut,
+		    onComplete: wiggleProp,
+		    onCompleteParams: [element, prop, min, max]
+		  };
+		  tweenProps[prop] = Math.random() * (max - min) + min;
+
+		  TweenMax.to(element, duration, tweenProps);
+		}
 
 
 
 
 
 
+		//TweenMax.to($(".overlay-loop-inner"), 5, {left: "+=400px", repeat: -1, ease: Linear.easeNone } );
+		TweenMax.to($(".overlay-smoke-inner"), 60, {left: "+=1600px", repeat: -1, ease: Linear.easeNone, force3D:true } );
+		TweenMax.to($(".overlay-noise-inner"), 60, {left: "+=600px", repeat: -1, ease: Linear.easeNone, force3D:true } );
 
-		TweenMax.to($(".overlay-loop-inner"), 5, {left: "+=400px", repeat: -1, ease: Linear.easeNone } );
-
-
-		
+		/* Introduction block  ---------------------------------------------------------- */
 			
 			
 
