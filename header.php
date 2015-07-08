@@ -24,10 +24,10 @@
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 		
-		<nav class="nav-container closed">
+		<nav class="nav-container">
 
 			<div class="nav-bnt"></div>
-			<div class="nav-inner closed">
+			<div class="nav-inner">
 				<div class="nav-inner-wrap">
 					<?php
 					wp_nav_menu( array(

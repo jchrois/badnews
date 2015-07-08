@@ -33,10 +33,10 @@
 			</div>
 
 
-			<div class="overlay-textbox hidden-xs">
+			<div class="overlay-textbox">
 				<div class="overlay-textbox-bnt"></div>
 
-				<div class="overlay-textbox-inner up">
+				<div class="overlay-textbox-inner up hidden-xs">
 					<h4>BAD NEWS AGENCY</h4>
 					<p>
 						We do motion graphics and digital design.<br />
@@ -45,15 +45,22 @@
 						<br /><br />
 						BNA currently have [ 1 ] employee:<br />
 						Jakob Chrøis, DK-CPH <span class="info-txt">[Employee of the month 03/2015]</span><br /> 
-
-
-						
 					</p>
 				</div>
-
 			</div>
 
-			<div class="overlay-textbox-mobile visible-xs-*"></div>
+
+			<div class="overlay-textbox-mobile visible-xs">
+				<h4>BAD NEWS AGENCY</h4>
+				<p>
+					We do motion graphics and digital design.<br />
+					For money, and/or hugs.<br /><span class="info-txt">[HUG/USD exchange rate: 22,300.90]</span>
+
+					<br /><br />
+					BNA currently have [ 1 ] employee:<br />
+					Jakob Chrøis, DK-CPH<br /> <span class="info-txt">[Employee of the month 03/2015]</span><br /> 
+				</p>
+			</div>
 
 
 			<div class="overlay-smoke hidden-xs">

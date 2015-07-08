@@ -92,7 +92,8 @@ canvas {
 div#preloader { 
 	position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; 
 	overflow: visible; 
-	background:  #fff no-repeat center center url('img/preload.jpg'); 
+	background:  #fff no-repeat center center url('img/preload.jpg');
+	background-size: 50%;
 }
 
 
@@ -170,15 +171,9 @@ h4 {
 /* NAV  > ---------------------------------------------------------- */
 
 
-.nav-container {
+.nav-bnt {
 	position: fixed;
 	top: 5%; right: 5%;
-	width: 30px; height: 30px;
-	z-index: 99;
-}
-
-.nav-bnt {
-	position: absolute;
 	width: 30px; height: 30px;
 	z-index: 100;
 	cursor: pointer;
@@ -186,21 +181,29 @@ h4 {
 }
 
 .nav-inner {
-	position: absolute;
+	position: fixed;
+	top: 5%; right: 5%;
 	z-index: 90;
-	width: 200px;
- 	right: 0;
+	width: 30px; height: 30px;
+
  	white-space: nowrap;
- 	
  	background:rgba(255, 255, 255, 0);
+
  	border: 2px solid #fff;
  	overflow: hidden;
- 	
+
 }
 
-.nav-inner.closed {
-	width: 30px; height: 30px;
+.nav-inner.open {
+	width: 25%; height: 25%;
 }
+
+@media (max-width: 480px) { 
+   .nav-inner.open {
+   		width: 90%; height: 88%;
+   }
+}
+
 
 
 .nav-inner-wrap  {
@@ -315,7 +318,6 @@ h4 {
 	position: absolute;
 	left: 5%; bottom: 7%;
 	z-index: 10;
-	background: #fff;
 	width: 30px; height: 30px;
 	color: #fff;
 }
@@ -327,8 +329,8 @@ h4 {
 	white-space: nowrap;
 	overflow: hidden;
 
-	background:rgba(255, 255, 255, 1);
-	border: 0.5px solid #fff;
+	background:rgba(255, 255, 255, 0);
+
 }
 
 .overlay-textbox-inner.up { 
@@ -339,8 +341,9 @@ h4 {
 .overlay-textbox-inner.open {
 	width: 500px; height: 230px; 
 	padding: 30px;
-	background:rgba(255, 255, 255, 0.03);
+	background:rgba(0, 0, 0, 0.50);
 }
+
 
 
 .overlay-textbox-bnt {
@@ -355,7 +358,9 @@ h4 {
 }
 
 .overlay-textbox-bnt.open {
-	background-color: #ffffff;
+	width: 25px; height: 25px;
+	margin-top: 2px; margin-left: 2px;
+	background-color: #fff;
 	border-radius: 25px;
 
 	-ms-transform: rotate(45deg); 
@@ -363,6 +368,26 @@ h4 {
     transform: rotate(45deg);
 }
 
+
+.overlay-textbox-mobile {
+	position: absolute;
+	left: 5%; bottom: 7%;
+   	width: 30px; height: 30px;
+   	padding: 0px;
+
+   	z-index: 8;
+   	color: #fff;
+   	background:rgba(255, 255, 255, 1);
+   	font-size: 10px;
+   	overflow: hidden;
+}
+
+
+.overlay-textbox-mobile.open {
+   	width: 90%; height: 43%;
+   	padding: 30px 30px 30px 30px;
+   	background:rgba(0, 0, 0, 0.75);
+}
 
 
 

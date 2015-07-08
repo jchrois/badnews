@@ -57,6 +57,7 @@
 				//close
 				TweenMax.to($(box).find(".overlay-textbox-inner"), 0.5, {className: '-=open', ease: Power3.easeInOut});
 				TweenMax.to($(box).find(".overlay-textbox-bnt"), 0.5, {className: '-=open', ease: Power3.easeInOut});
+				TweenMax.to($(".overlay-textbox-mobile"), 0.5, {className: '-=open', ease: Power3.easeInOut});
 				$(box).removeClass('open');
 				console.log("close");
 
@@ -64,6 +65,7 @@
 				//open
 				TweenMax.to($(box).find(".overlay-textbox-inner"), 0.5, {className: '+=open', ease: Power3.easeInOut});
 				TweenMax.to($(box).find(".overlay-textbox-bnt"), 0.5, {className: '+=open', ease: Power3.easeInOut});
+				TweenMax.to($(".overlay-textbox-mobile"), 0.5, {className: '+=open', ease: Power3.easeInOut});
 				$(box).addClass('open');
 				console.log("open");
 			}
@@ -77,17 +79,15 @@
 		function nav_open() {
 			var nav = $(this).parent();
 			
-			if($(nav).hasClass('closed')) {
+			if($(nav).hasClass('open')) {
 				//open
-				TweenMax.to($(nav).find(".nav-inner"), 0.5, {className: '-=closed', ease: Power3.easeInOut});
-				$(nav).removeClass('closed');
-				console.log("open");
+				TweenMax.to($(nav).find(".nav-inner"), 0.5, {className: '-=open', ease: Power3.easeInOut});
+				$(nav).removeClass('open');
 
 			} else {
 				//close
-				TweenMax.to($(nav).find(".nav-inner"), 0.5, {className: '+=closed', ease: Power3.easeInOut});
-				$(nav).addClass('closed');
-				console.log("close");
+				TweenMax.to($(nav).find(".nav-inner"), 0.5, {className: '+=open', ease: Power3.easeInOut});
+				$(nav).addClass('open');
 
 			}
 
@@ -96,6 +96,7 @@
 
 
 
+		/* SINGLE PROJECT */
 
 		$('.headerbox-bnt').click(headerbox_bnt_click);
 		
@@ -151,12 +152,13 @@
 
 		TweenMax.staggerFrom($(".logo-part"), 3, {opacity: 0, delay: 0.3, ease:Cubic.easeInOut, force3D:true}, 0.3);
 		TweenMax.staggerFrom($(".detail-txt"), 2, {opacity: 0, backgroundColor: "#ffffff", width: 0, delay: 0, ease:Power4.easeInOut, force3D:true}, 0.1);
-		TweenMax.from($('.overlay-textbox'), 2.5, {opacity: 0, backgroundColor: "#ffffff", delay: 1.5, ease:Power4.easeInOut, force3D:true});
+		
+		TweenMax.from($('.overlay-textbox-mobile'), 2, {opacity: 0, delay: 1.5, ease:Power4.easeInOut, force3D:true});
+		TweenMax.from($('.overlay-textbox'), 2, {opacity: 0, backgroundColor: "#ffffff", delay: 1.5, ease:Power4.easeInOut, force3D:true});
 
 		TweenMax.from($(".logo-p02"), 3600, {rotation: "+=360", delay: 0.3, repeat: -1, ease: Linear.easeNone, force3D:true });
 		TweenMax.from($(".logo-p03"), 360, {rotation: "-=360",  delay: 0.3, repeat: -1, ease: Linear.easeNone, force3D:true });
 		TweenMax.from($(".logo-p04"), 60, {rotation: "+=360",  delay: 0.3, repeat: -1, ease: Linear.easeNone, force3D:true });
-
 
 
 		wiggle($(".overlay-smoke-inner"));
