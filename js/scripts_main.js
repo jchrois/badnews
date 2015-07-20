@@ -40,11 +40,24 @@
 		$(window).on( "scroll", scrollHandler);
 
 		function scrollHandler() {
-		
-			scrollSpy(".txtbox-animate", animateTxtBoxIn, animateTxtBoxOut);
-			//scrollSpy(".spin", spinStart, spinStop);
+			
+			//scrollSpy(".txtbox-animate", animateTxtBoxIn, animateTxtBoxOut);
+			scrollSpy(".projects-container", onScrollProjectsIn, onScrollProjectsOut);
 
 		}
+
+
+		function onScrollProjectsIn() {
+			console.log("Projects seen");
+			TweenMax.staggerFrom($(".project-element"), 2, {opacity: 0, backgroundColor: "#ffffff", delay: 0, ease:Power4.easeInOut, force3D:true}, 0.1);
+
+		}
+
+		function onScrollProjectsOut() {
+			console.log("Projects unseen");
+		}
+
+
 
 
 
@@ -123,13 +136,22 @@
 
 
 
+
+
+		/* events < -------------------------------------------------- */
+
+
+
+
+
+
+
+
+
 		/* Introduction block  ---------------------------------------------------------- */
 
 
-	
-
 		startTime();
-
 
 		function startTime() {
 		    var today=new Date();
@@ -188,58 +210,11 @@
 
 
 
-
-
-		//TweenMax.to($(".overlay-loop-inner"), 5, {left: "+=400px", repeat: -1, ease: Linear.easeNone } );
 		TweenMax.to($(".overlay-smoke-inner"), 60, {left: "+=1600px", repeat: -1, ease: Linear.easeNone, force3D:true } );
 		TweenMax.to($(".overlay-noise-inner"), 60, {left: "+=600px", repeat: -1, ease: Linear.easeNone, force3D:true } );
 
 		/* Introduction block  ---------------------------------------------------------- */
-			
-			
-
-
-
-
-
-
-
-
-
 		
-
-
-
-
-
-
-
-
-
-		/* events < -------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

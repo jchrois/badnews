@@ -8,12 +8,7 @@
 		
 		<div class="fullheight-content introduction-hero">
 			
-
-			<?php /*
-			<div class="threejs_canvas_01"></div>
-			*/ ?>
-
-
+			
 			<div class="detail-txt-container">
 				<div class="detail-txt detail-txt-01 vertical-txt-down">MOTION GRAPHICS</div>
 				<div class="detail-txt detail-txt-02 vertical-txt-down">DIGITAL DESIGN</div>
@@ -62,10 +57,11 @@
 				</p>
 			</div>
 
-
+			<?php /*
 			<div class="overlay-smoke hidden-xs">
 					<div class="overlay-smoke-inner hidden-xs"></div>
 			</div>
+			*/ ?>
 
 			<div class="overlay-noise hidden-xs">
 					<div class="overlay-noise-inner hidden-xs"></div>

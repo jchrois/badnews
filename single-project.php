@@ -21,15 +21,13 @@
 
 					<div class="single-project-headerbox-container">
 						
-						<div class="single-project-headerbox">
-
-
+						<div class="single-project-headerbox hidden-xs">
 
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-sm-6">
 											<a href="<?php the_permalink() ?>">
-												<h1 class="display-titel"><?php the_title(); ?></h1>
+												<h3><?php the_title(); ?></h3>
 											</a>
 										</div>
 
@@ -39,17 +37,21 @@
 									</div>
 
 									<div class="row">
-										<div class="col-sm-6 single-project-role">
-											<span class="icon-square"></span><p>Art direction / styleframes / motion graphics</p>
+										<div class="col-sm-6">
+											Agency: <?php the_field("agency"); ?><br />
+											Client: <?php the_field("client"); ?><br />
+											Roles: <?php the_field("roles"); ?>
+					
 										</div>
 
 										<div class="col-sm-6">
-											<p>There is no reality except the one contained within us. That is why so many people live such an unreal life. 
-											They take the images outside of them for reality and never allow the world within to assert itself.</p>
+											
 										</div>
+
 									</div>
 								</div>
 						</div>
+
 
 					</div>
 
@@ -58,11 +60,18 @@
 			</div>
 		</section>
 
+		<section class="container-fluid">
+			<div class="row">
+				<div class="visible-xs single-project-headerbox-mobile">
+					<h3><?php the_title(); ?></h3>
+					<?php /* <span class="icon-square"></span> */ ?>
+					Agency: <?php the_field("agency"); ?><br />
+					Client: <?php the_field("client"); ?><br />
+					Roles: <?php the_field("roles"); ?>
+				</div>
+			</div>
+		</section>
 
-		<?php /*
-		<p><?php the_field('client'); ?></p>
-		<p><?php the_field('role'); ?></p>
-		*/ ?>
 
 		<?php
 			// check if the repeater field has rows of data
@@ -71,11 +80,14 @@
 			 	// loop through the rows of data
 			    while ( have_rows('sections') ) : the_row();
 
-					 if( get_row_layout() == 'full_image' ):
+					if( get_row_layout() == 'full_image' ):
 					 	get_template_part('parts/project/part', 'project-image');
 
 			        elseif( get_row_layout() == 'video' ): 
 			        	get_template_part('parts/project/part', 'project-video');
+
+			        elseif( get_row_layout() == 'title' ): 
+			        	get_template_part('parts/project/part', 'project-title');
 			        	
 			        endif;
        
@@ -92,15 +104,9 @@
 
 
 <?php endwhile; else : ?>
-	<p>MASSIVE FUCKING FAILURE. You broke our website, you douche.</p>
+	<p>MASSIVE FUCKING FAILURE. You broke the internet.</p>
 <?php endif; ?>
 
-
-
-
-
 <?php get_template_part('parts/part', 'contact'); ?>
-
-
 
 <?php get_footer(); ?>

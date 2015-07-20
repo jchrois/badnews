@@ -32,7 +32,6 @@ function header_scripts()
 
 
 
-
         wp_register_script('throwprops', get_template_directory_uri() . '/js/lib/greensock/plugins/ThrowPropsPlugin.min.js', array(), '1.16.1'); 
         wp_enqueue_script('throwprops');
 
@@ -388,11 +387,13 @@ function create_post_type_projects()
             'excerpt',
             'thumbnail'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
-        'can_export' => true, // Allows export in Tools > Export
-        'taxonomies' => array(
+        'can_export' => true // Allows export in Tools > Export
+        
+        /*'taxonomies' => array(
             'post_tag',
             'category'
         ) // Add Category and Post Tags support
+        */
     ));
 }
 

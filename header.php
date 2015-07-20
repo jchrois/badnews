@@ -19,9 +19,8 @@
 
 	<body <?php body_class(); ?>>
 		
-		<div id="preloader"></div>
+		<div id="preloader" style="background-image: url('<?php echo get_template_directory_uri() . "/img/preload.jpg" ?>')"></div>
 		
-
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 		
 		<nav class="nav-container">

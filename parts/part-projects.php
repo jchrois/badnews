@@ -18,13 +18,20 @@
 									
 												<?php 
 
-													 $args = array(
-												      'post_type' => 'project',
-												      'tax_query' => array()
+													$args = array(
+													    'post_type' => 'project',
+													    'posts_per_page' => -1,
+														'meta_key' => 'order',
+														'orderby' => 'meta_value_num',
+														'order' => 'DESC',
+													    'tax_query' => array()
+
 												    );
+
 
 												    $counter = 0;
 												    $projects = new WP_Query( $args );
+
 
 												?>
 
@@ -34,7 +41,6 @@
 													if($active):
 
 														$heroimage = get_field('hero_image');
-							
 												?>	
 															
 															<a class="project-element" href="<?php the_permalink() ?>" style="background-image: url('<?php echo $heroimage['url']; ?>');">
@@ -46,7 +52,7 @@
 
 
 													<?php else: ?>
-														<a class="project-element-inactive">
+														<a class="project-element inactive">
 															<div><h4><?php the_title();?> <span>[INACTIVE]</span></h4></div>
 														</a>
 
@@ -55,29 +61,20 @@
 														
 
 												<?php endwhile; else : ?>
-													<p>No projects</p>
+													<?php /* NO PROJECTS */ ?>
 
 												<?php endif; ?>
 
-													<a class="project-element-inactive">
+													<a class="project-element inactive">
 															<div><h4>BLANK</h4></div>
 														</a>
-														<a class="project-element-inactive">
+														<a class="project-element inactive">
 															<div><h4>BLANK</h4></div>
 														</a>
-														<a class="project-element-inactive">
+														<a class="project-element inactive">
 															<div><h4>BLANK</h4></div>
 														</a>
-														<a class="project-element-inactive">
-															<div><h4>BLANK</h4></div>
-														</a>
-														
-														<a class="project-element-inactive">
-															<div><h4>BLANK</h4></div>
-														</a>
-														
-														
-
+											
 												</div>
 									</div>
 
