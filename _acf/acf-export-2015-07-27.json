@@ -1,0 +1,332 @@
+[
+    {
+        "key": "group_550f25a1a602c",
+        "title": "Project",
+        "fields": [
+            {
+                "key": "field_559bc0261c6a2",
+                "label": "Active",
+                "name": "active",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "": ""
+                },
+                "default_value": {
+                    "": ""
+                },
+                "layout": "vertical",
+                "toggle": 0
+            },
+            {
+                "key": "field_55acfe74032ba",
+                "label": "Order",
+                "name": "order",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 1,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55ad173517f50",
+                "label": "Agency",
+                "name": "agency",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Personal": "Personal",
+                    "Stupid Studios": "Stupid Studios"
+                },
+                "default_value": {
+                    "Personal": "Personal"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_55ad17865590e",
+                "label": "Client",
+                "name": "client",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55ad17c59738e",
+                "label": "Roles",
+                "name": "roles",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Everything": "Everything",
+                    "Concept": "Concept",
+                    "Art direction": "Art direction",
+                    "3D illustration": "3D illustration",
+                    "2D illustration": "2D illustration",
+                    "Graphic design": "Graphic design",
+                    "Digital design": "Digital design",
+                    "Animation": "Animation"
+                },
+                "default_value": {
+                    "Everything": "Everything"
+                },
+                "allow_null": 0,
+                "multiple": 1,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_55ad18840b56d",
+                "label": "Team",
+                "name": "team",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_550f1a0abee3c",
+                "label": "Hero image",
+                "name": "hero_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "large",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_550f1eb4e34f1",
+                "label": "Description",
+                "name": "description",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "...",
+                "placeholder": "...",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": 250,
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_550f25ce295e7",
+                "label": "Sections",
+                "name": "sections",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "button_label": "Add section",
+                "min": "",
+                "max": "",
+                "layouts": [
+                    {
+                        "key": "55ad2f4c61370",
+                        "name": "full_image",
+                        "label": "Full image",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_55ad2f63a1c46",
+                                "label": "Image",
+                                "name": "image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "55ad2fc107a2d",
+                        "name": "video",
+                        "label": "Video",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_55ad2fcb07a2e",
+                                "label": "Video",
+                                "name": "video",
+                                "type": "oembed",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "width": "",
+                                "height": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "55ad3c81b2616",
+                        "name": "title",
+                        "label": "Title",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_55ad3c9fb2617",
+                                "label": "Title",
+                                "name": "title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "project"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "featured_image"
+        ]
+    }
+]
