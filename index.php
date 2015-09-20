@@ -3,7 +3,7 @@
 		
 		<?php get_template_part('parts/part', 'introduction'); ?>
 				
-		<?php get_template_part('parts/part', 'projects'); ?>
+		<?php //get_template_part('parts/part', 'projects'); ?>
 
 		<?php //get_template_part('parts/part', 'test'); ?>
 

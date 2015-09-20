@@ -1,11 +1,11 @@
 /*
-	Theme Name: B A D N E W S
+	Theme Name: J.CHROIS _ V2
 	Theme URI: http://teef.nu
-	Description: TEEF Corporation.
+	Description: J.Chrøis Corporation.
 	Version: 1.0
-	Author: J. Chrøis
+	Author: J.Chrøis
 	Author URI: http://teef.nu
-	Tags: TEEF
+	Tags: J.Chrøis
 
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
@@ -42,11 +42,11 @@ html {
 
 body {
 	
-	font-family: "uniformregular";
-	font-size: 12px;
+	font-family: "adobe-garamond-pro";
+	font-size: 14px;
 
-	color: #666;
-	background-color: #000;
+	color: #333;
+	background-color: #f2f2f2;
 	margin: 0;
 }
 
@@ -97,41 +97,42 @@ div#preloader {
 
 
 h1 {
-	font-family: 'Roboto', sans-serif;
+	font-family: "proxima-nova";
 	font-size: 36px; line-height: 40px;
 	font-weight: 500;
 }
 
 h3 {
-	font-family: "uniform_medium", sans-serif;
+	font-family: "proxima-nova";
 	font-size: 18px; line-height: 36px;
 	letter-spacing: 15px;
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #fff;
 }
 
 h4 {
 	font-size: 12px;
-	font-family: "uniform_medium";
+	font-family: "proxima-nova";
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 24px;
 }
 
+a, a:visited, a:link {
+	color: #6666ff;
+}
+
+
+
 .info-txt {
 	font-size: 9px;
-	color: #bbb;
-	font-family: "notcouriersansregular";
+	font-family: "proxima-nova";
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	line-height: 24px;
 
 }
-
-
-
-
 
 
 .col-nopadding {
@@ -141,11 +142,6 @@ h4 {
 .img-fill {
 	width: 100%;
 }
-
-
-
-
-
 
 
 
@@ -278,11 +274,11 @@ h4 {
 
 
 #introduction {
-	background: #000000;
+	background: #f1f1f1;
 }
 
 .introduction-hero {
-	background-image: url('img/_theme/citybg_02.jpg');
+	
 }
 
 
@@ -310,6 +306,29 @@ h4 {
 
 
 
+.overlay-grid {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("img/svg/grid_01.svg");
+	background-position: center;
+	background-size: 100%;	
+
+}
+
+
+
+.overlay-map {
+	position: absolute;
+	width: 100%;
+	height: 1500px;
+	background-image: url("img/_theme/city-map.png");
+	background-position: center top;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+
+}
 
 
 
@@ -318,7 +337,7 @@ h4 {
 	left: 5%; bottom: 7%;
 	z-index: 10;
 	width: 30px; height: 30px;
-	color: #fff;
+
 }
 
 .overlay-textbox-inner {
@@ -327,7 +346,6 @@ h4 {
 	padding: 0;
 	white-space: nowrap;
 	overflow: hidden;
-
 	background:rgba(255, 255, 255, 0);
 
 }
@@ -340,7 +358,7 @@ h4 {
 .overlay-textbox-inner.open {
 	width: 500px; height: 230px; 
 	padding: 30px;
-	background:rgba(0, 0, 0, 0.50);
+	background:rgba(255, 255, 255, 1);
 }
 
 
@@ -351,7 +369,7 @@ h4 {
 	position: absolute;
 	cursor: pointer;
 
-	background-color: #EFE586;
+	background-color: #6666ff;
 	background-image: url('img/svg/plus.svg');
 
 }
@@ -394,47 +412,9 @@ h4 {
 
 
 
-.overlay-smoke {
+
+#threeCanvas_01 {
 	position: absolute;
-	z-index: 3;
-	top: 0; left: 0;
-	width: 100%; height: 100%;
-	overflow: hidden;
-
-}
-
-.overlay-smoke-inner {
-	position: absolute;
-	left: -1600px;
-	width: 300%; height: 100%;
-	background-image: url('img/_theme/smoke_01.png');
-	background-position: bottom;
-	background-repeat: repeat-x;
-}
-
-.overlay-noise {
-	position: absolute;
-	z-index: 5;
-	top: 0; left: 0;
-	width: 100%; height: 100%;
-	overflow: hidden;
-
-}
-
-.overlay-noise-inner {
-	position: absolute;
-	left: -600px;
-	width: 300%; height: 100%;
-	background-image: url('img/_theme/noise_01.png');
-	background-position: bottom;
-}
-
-
-
-.threejs_canvas_01 {
-	position: absolute;
-	z-index: 2;
-	overflow: hidden;
 }
 
 
@@ -451,13 +431,13 @@ h4 {
 }
 
 .detail-txt {
-	font-size: 12px;
-	color: #ffffff;
-	font-family: "notcouriersansregular";
+	font-size: 10px;
+	color: #666;
+	font-family: "uniformregular";
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	text-align: center;
+	letter-spacing: 3px;
 	line-height: 24px;
-
 	white-space: nowrap;
 	overflow: hidden;
 
@@ -475,30 +455,30 @@ h4 {
 
 .detail-txt-01 {
 	position: absolute;
-	top: 19%; left: 5%;
-	width: 150px; height: 30px;
+	top: 15%; left: 5%;
+	width: 200px; height: 30px;
 	margin-left: 30px;
 
 }
 
 .detail-txt-02 {
 	position: absolute;
-	top: 57%; left: 5%;
-	width: 150px; height: 30px;
+	top: 52%; left: 5%;
+	width: 200px; height: 30px;
 	margin-left: 30px;
 
 }
 
 .detail-txt-03 {
 	position: absolute;
-	top: 19%; left: 95%;
-	width: 150px; height: 30px;
+	top: 15%; left: 95%;
+	width: 200px; height: 30px;
 }
 
 .detail-txt-04 {
 	position: absolute;
-	top: 57%; left: 95%;
-	width: 150px; height: 30px;
+	top: 52%; left: 95%;
+	width: 200px; height: 30px;
 
 }
 
@@ -569,8 +549,7 @@ h4 {
 }
 
 .services-row {
-	background: #000;
-	color: #666;
+	color: #333;
 	min-height: 250px;
 	padding-top: 50px;
 	padding-bottom: 100px;
@@ -578,7 +557,7 @@ h4 {
 }
 
 .services-row h4 {
-	color: #fff;
+	color: #333;
 	margin-bottom: 30px;
 }
 
@@ -608,7 +587,6 @@ h4 {
 }
 
 .project-titelbar {
-	background-color: #000;
 	height: 100%;
 }
 
@@ -661,7 +639,7 @@ h4 {
 	width: 100%; height: 100%;
 	top: 25px;
 
-	background-color: #111;
+	background-color: #eee;
 	overflow-x: visible;
 }
 
@@ -675,6 +653,7 @@ h4 {
 	display: inline-block;
 	margin-left: -4px;
 	width: 200px; height: 100%;
+	background-color: #f1f1f1;
 	background-position: center;
 	background-size: cover;
 
@@ -698,7 +677,7 @@ h4 {
 	margin-left: 25px;
 	padding: 12px 30px 10px 30px;
 	
-	color: #fff;
+	color: #333;
 	/* background-color: rgba(255, 255, 255, 0.1); */
 	border: 2px solid #fff;
 

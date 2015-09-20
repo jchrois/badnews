@@ -19,7 +19,7 @@
 
 			<div class="col-md-6 contact-box2">
 				<p>Pleasantries or straight to business.</p>
-				<a class="mail-bnt" href="mailto:mail@badnews.agency">SEND E-MAIL</a>
+				<a class="mail-bnt" href="mailto:mail@jchrois.com">SEND E-MAIL</a>
 			
 			</div>
 

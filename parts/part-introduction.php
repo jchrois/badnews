@@ -8,11 +8,14 @@
 		
 		<div class="fullheight-content introduction-hero">
 			
-			
+
+			<div class="overlay-grid"></div>
+			<div class="overlay-map"></div>
+
 			<div class="detail-txt-container">
 				<div class="detail-txt detail-txt-01 vertical-txt-down">MOTION GRAPHICS</div>
 				<div class="detail-txt detail-txt-02 vertical-txt-down">DIGITAL DESIGN</div>
-				<div class="detail-txt detail-txt-03 vertical-txt-up">BAD NEWS AGENCY</div>
+				<div class="detail-txt detail-txt-03 vertical-txt-up">JAKOB CHRØIS</div>
 				<div class="detail-txt detail-txt-04 vertical-txt-up">00 : 00 : 00</div>
 			</div>
 
@@ -32,41 +35,28 @@
 				<div class="overlay-textbox-bnt"></div>
 
 				<div class="overlay-textbox-inner up hidden-xs">
-					<h4>BAD NEWS AGENCY</h4>
+					<h4>Hello. I'm Jakob Chrøis</h4>
 					<p>
-						We do motion graphics and digital design.<br />
-						For money, and/or hugs. <span class="info-txt">[HUG/USD exchange rate: 22,300.90]</span>
-
+						This is the personal portfolio of Digital designer / Art director Jakob Chrøis.<br />
+						I'm currently based i Copenhagen, employed at <a href="http://www.stupid-studio.com">Stupid Studios</a>.
 						<br /><br />
-						BNA currently have [ 1 ] employee:<br />
-						Jakob Chrøis, DK-CPH <span class="info-txt">[Employee of the month 03/2015]</span><br /> 
+						I love designing and integrating motions graphics and 3D into websites, <br /> app and games.
+						<br /> 
 					</p>
 				</div>
 			</div>
 
 
 			<div class="overlay-textbox-mobile visible-xs">
-				<h4>BAD NEWS AGENCY</h4>
-				<p>
-					We do motion graphics and digital design.<br />
-					For money, and/or hugs.<br /><span class="info-txt">[HUG/USD exchange rate: 22,300.90]</span>
-
-					<br /><br />
-					BNA currently have [ 1 ] employee:<br />
-					Jakob Chrøis, DK-CPH<br /> <span class="info-txt">[Employee of the month 03/2015]</span><br /> 
-				</p>
+				<h4>Hello. I'm Jakob Chrøis</h4>
+					<p>
+						This is the personal portfolio of Digital designer / Art director Jakob Chrøis.<br />
+						I'm currently based i Copenhagen, employed at <a href="http://www.stupid-studio.com">Stupid Studios</a>.
+						<br /><br />
+						I love designing and integrating motions graphics and 3D into websites, <br /> app and games.
+						<br /> 
+					</p>
 			</div>
-
-			<?php /*
-			<div class="overlay-smoke hidden-xs">
-					<div class="overlay-smoke-inner hidden-xs"></div>
-			</div>
-			*/ ?>
-
-			<div class="overlay-noise hidden-xs">
-					<div class="overlay-noise-inner hidden-xs"></div>
-			</div>
-
 
 		</div>
 
@@ -78,7 +68,7 @@
 	<div class="row services-row">
 
 			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 big-txt">
-				<img class="img-responsive" src="<?php echo get_template_directory_uri() . "/img/svg/badnews_txt_v1.svg"; ?>">
+				<img class="img-responsive" src="<?php echo get_template_directory_uri() . "/img/svg/jchrois_txt_01.svg"; ?>">
 			</div>
 
 		
