@@ -9,7 +9,7 @@
 		<div class="fullheight-content introduction-hero">
 			
 
-			<div class="overlay-grid"></div>
+			<div class="hidden-xs overlay-grid"></div>
 			<div class="overlay-map"></div>
 
 			<div class="detail-txt-container">
