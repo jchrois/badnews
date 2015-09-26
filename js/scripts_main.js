@@ -6,7 +6,7 @@
 		init();
 
 		function init() {
-			scrollHandler();
+			//scrollHandler();
 			
 			if ($('.projects-inner').length) {
 				Draggable.create(".projects-inner",  {
@@ -42,7 +42,7 @@
 		function scrollHandler() {
 			
 			//scrollSpy(".txtbox-animate", animateTxtBoxIn, animateTxtBoxOut);
-			scrollSpy(".projects-container", onScrollProjectsIn, onScrollProjectsOut);
+			//scrollSpy(".projects-container", onScrollProjectsIn, onScrollProjectsOut);
 
 		}
 

@@ -16,7 +16,6 @@
 						<div class="single-project-heroBorder"></div>
 					</div>
 
-					<div class="headerbox-bnt"></div>
 					
 
 					<div class="single-project-headerbox-container">

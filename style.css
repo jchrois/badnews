@@ -20,10 +20,6 @@
 
 
 
-
-
-
-
 /* global box-sizing */
 *,
 *:after,
@@ -50,6 +46,11 @@ body {
 	margin: 0;
 }
 
+@media (max-width: 480px) { 
+   body {
+   		font-size: 12px;
+   }
+}
 
 canvas {
 	display: block;
@@ -92,7 +93,6 @@ div#preloader {
 	position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; 
 	overflow: visible; 
 	background:  #fff no-repeat center center;
-
 }
 
 
@@ -104,8 +104,8 @@ h1 {
 
 h3 {
 	font-family: "proxima-nova";
-	font-size: 18px; line-height: 36px;
-	letter-spacing: 15px;
+	font-size: 18px; line-height: 28px;
+	letter-spacing: 12px;
 	text-transform: uppercase;
 	font-weight: 500;
 }
@@ -142,18 +142,6 @@ a, a:visited, a:link {
 .img-fill {
 	width: 100%;
 }
-
-
-
-.icon-square {
-	width: 12px; height: 12px;
-	background-color: #EFE586;
-	display: block; float: left;
-	margin: 0px 10px 0px 0px;
-
-}
-
-
 
 
 
@@ -198,6 +186,8 @@ a, a:visited, a:link {
    		width: 90%; height: 88%;
    }
 }
+
+
 
 
 
@@ -403,21 +393,9 @@ a, a:visited, a:link {
 .overlay-textbox-mobile.open {
    	width: 90%; height: 43%;
    	padding: 30px 30px 40px 30px;
-   	background:rgba(0, 0, 0, 0.75);
+   	background:rgba(255, 255, 255, 0.75);
+   	color: #333;
 }
-
-
-
-
-
-
-
-
-#threeCanvas_01 {
-	position: absolute;
-}
-
-
 
 
 
@@ -455,7 +433,7 @@ a, a:visited, a:link {
 
 .detail-txt-01 {
 	position: absolute;
-	top: 15%; left: 5%;
+	top: 12%; left: 5%;
 	width: 200px; height: 30px;
 	margin-left: 30px;
 
@@ -463,7 +441,7 @@ a, a:visited, a:link {
 
 .detail-txt-02 {
 	position: absolute;
-	top: 52%; left: 5%;
+	top: 49%; left: 5%;
 	width: 200px; height: 30px;
 	margin-left: 30px;
 
@@ -471,13 +449,13 @@ a, a:visited, a:link {
 
 .detail-txt-03 {
 	position: absolute;
-	top: 15%; left: 95%;
+	top: 12%; left: 95%;
 	width: 200px; height: 30px;
 }
 
 .detail-txt-04 {
 	position: absolute;
-	top: 52%; left: 95%;
+	top: 49%; left: 95%;
 	width: 200px; height: 30px;
 
 }
@@ -533,7 +511,7 @@ a, a:visited, a:link {
 
 .big-txt {
 	height: 100px;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 }
 
 .big-txt img {
@@ -558,11 +536,12 @@ a, a:visited, a:link {
 
 .services-row h4 {
 	color: #333;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .services-row p {
 	letter-spacing: 1px;
+	color: #888;
 }
 
 .services-row img {
@@ -664,9 +643,8 @@ a, a:visited, a:link {
 }
 
 .project-element:hover h4 {
-	background-color: #EFE586;
-	color: #4A4A54;
-	border: 2px solid #EFE586;
+	background-color: #6666ff;
+	color: #fff;
 }
 
 
@@ -678,8 +656,8 @@ a, a:visited, a:link {
 	padding: 12px 30px 10px 30px;
 	
 	color: #333;
-	/* background-color: rgba(255, 255, 255, 0.1); */
-	border: 2px solid #fff;
+	background-color: #f1f1f1; 
+	/* border: 2px solid #fff; */
 
 	-ms-transform: rotate(90deg); /* IE 9 */
     -ms-transform-origin: 0% 0%; /* IE 9 */
@@ -703,8 +681,8 @@ a, a:visited, a:link {
 
 .project-element.inactive h4 {
 	background: none;
-	border: 1px solid #333;
-	color: #333;
+	border: 1px solid #ccc;
+	color: #ccc;
 }
 
 .project-element.inactive h4 span {
@@ -748,7 +726,7 @@ a, a:visited, a:link {
 	position: absolute;
 	z-index: 5;
 	width: 100%; height: 100%;
-	border: 20px solid #000;
+	border: 20px solid #f2f2f2;
 
 }
 
@@ -764,20 +742,20 @@ a, a:visited, a:link {
 	z-index: 4;
 	bottom: 0px;
 	width: 100%;
-	background-color: #000;
+	background-color: #f2f2f2;
 	color: #444;
 	padding: 30px 40px 70px 40px;
 
 }
 
-.single-project-headerbox h1 {
-	color: #fff;
+.single-project-headerbox h3 {
+	color: #333;
 }
 
 
 .single-project-headerbox-mobile {
 	padding: 5px 40px 60px 50px;
-	background-color: #000;
+	background-color: #f2f2f2;
 }
 
 
@@ -787,7 +765,7 @@ a, a:visited, a:link {
 
 
 .openClose-bnt {
-	background: #EFE586;
+	background: #6666ff;
 	width: 100px; height: 15px;
 
 }
@@ -898,14 +876,20 @@ a, a:visited, a:link {
 	padding: 10px;
 	cursor: pointer;
 
-	font-family: "uniform_medium";
+
+	font-family: "proxima-nova";
 	font-size: 10px;
 	letter-spacing: 2px;
 	
 }
 
+a.mail-bnt {
+	color: #333;
+}
+
 .mail-bnt:hover, .mail-bnt:active, .mail-bnt:visited {
-	background-color: #EFE586;
+	background-color: #6666ff;
+	color: #fff;
 	text-decoration: none;
 } 
 

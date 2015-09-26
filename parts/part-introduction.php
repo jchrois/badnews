@@ -1,6 +1,10 @@
 <?php 
 
+$post = get_page_by_title( 'private_frontpage' );
+$content = apply_filters('the_content', $post->post_content); 
+
 ?>
+
 
 <section id="introduction" class="container-fluid">
 
@@ -8,7 +12,6 @@
 		
 		<div class="fullheight-content introduction-hero">
 			
-
 			<div class="hidden-xs overlay-grid"></div>
 			<div class="overlay-map"></div>
 
@@ -35,27 +38,13 @@
 				<div class="overlay-textbox-bnt"></div>
 
 				<div class="overlay-textbox-inner up hidden-xs">
-					<h4>Hello. I'm Jakob Chrøis</h4>
-					<p>
-						This is the personal portfolio of Digital designer / Art director Jakob Chrøis.<br />
-						I'm currently based i Copenhagen, employed at <a href="http://www.stupid-studio.com">Stupid Studios</a>.
-						<br /><br />
-						I love designing and integrating motions graphics and 3D into websites, <br /> app and games.
-						<br /> 
-					</p>
+					<?php echo $content; ?>
 				</div>
 			</div>
 
 
 			<div class="overlay-textbox-mobile visible-xs">
-				<h4>Hello. I'm Jakob Chrøis</h4>
-					<p>
-						This is the personal portfolio of Digital designer / Art director Jakob Chrøis.<br />
-						I'm currently based i Copenhagen, employed at <a href="http://www.stupid-studio.com">Stupid Studios</a>.
-						<br /><br />
-						I love designing and integrating motions graphics and 3D into websites, <br /> app and games.
-						<br /> 
-					</p>
+				<?php echo $content; ?>
 			</div>
 
 		</div>
@@ -84,8 +73,8 @@
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<img class="img-responsive" src="<?php echo get_template_directory_uri() . "/img/svg/game-mark.svg"; ?>">
-				<h4>OTHER SHIT</h4>
-				<p>Logo + identity<br />[Game assets]<br />[Game UI]</p>
+				<h4>OTHER SERVICES</h4>
+				<p>Logo + identity<br /></p>
 			</div>
 	</div>
 </section>

@@ -64,16 +64,19 @@
 													<?php /* NO PROJECTS */ ?>
 
 												<?php endif; ?>
-
 													<a class="project-element inactive">
-															<div><h4>BLANK</h4></div>
-														</a>
+															<div><h4>More projects coming ...</h4></div>
+													</a>
+												<?php /*
+														
+
 														<a class="project-element inactive">
 															<div><h4>BLANK</h4></div>
 														</a>
 														<a class="project-element inactive">
 															<div><h4>BLANK</h4></div>
 														</a>
+												*/ ?>
 											
 												</div>
 									</div>
