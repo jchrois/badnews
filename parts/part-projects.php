@@ -52,10 +52,12 @@
 
 
 													<?php else: ?>
+
+													<?php /* 
 														<a class="project-element inactive">
 															<div><h4><?php the_title();?> <span>[INACTIVE]</span></h4></div>
 														</a>
-
+													*/ ?>
 													<?php endif; ?>
 
 														
