@@ -749,7 +749,7 @@ a, a:visited, a:link {
 
 }
 
-.single-project-headerbox h3 {
+.single-project-headerbox h3, .single-project-headerbox-mobile h3 {
 	color: #fff;
 }
 
@@ -761,7 +761,6 @@ a, a:visited, a:link {
 .single-project-headerbox-mobile {
 	padding: 5px 40px 60px 50px;
 	background-color: #1a1a1a;
-	color: #fff;
 }
 
 
