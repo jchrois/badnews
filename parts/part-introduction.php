@@ -43,12 +43,13 @@ $content = apply_filters('the_content', $post->post_content);
 					<?php echo $content; ?>
 				</div>
 			</div>
-			*/ ?>
+			
 
 
 			<div class="overlay-textbox-mobile visible-xs">
 				<?php echo $content; ?>
 			</div>
+			*/ ?>
 
 		</div>
 
