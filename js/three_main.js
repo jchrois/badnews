@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 
-
+	/*
 
 	var url = wnm_custom.template_url;
 
@@ -37,6 +37,8 @@ jQuery(document).ready(function(){
 		//console.log("resize")
 
 	});
+	
+	*/
 
 
 

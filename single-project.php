@@ -37,9 +37,9 @@
 
 									<div class="row">
 										<div class="col-sm-6">
-											Agency: <?php the_field("agency"); ?><br />
-											Client: <?php the_field("client"); ?><br />
-											Roles: <?php the_field("roles"); ?>
+											<span class="bold">Agency:</span> <?php the_field("agency"); ?><br />
+											<span class="bold">Client:</span> <?php the_field("client"); ?><br />
+											<span class="bold">Roles:</span> <?php the_field("roles"); ?>
 					
 										</div>
 

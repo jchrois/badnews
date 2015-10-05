@@ -34,6 +34,8 @@ $content = apply_filters('the_content', $post->post_content);
 			</div>
 
 
+			<?php /*
+
 			<div class="overlay-textbox">
 				<div class="overlay-textbox-bnt"></div>
 
@@ -41,6 +43,7 @@ $content = apply_filters('the_content', $post->post_content);
 					<?php echo $content; ?>
 				</div>
 			</div>
+			*/ ?>
 
 
 			<div class="overlay-textbox-mobile visible-xs">
@@ -56,9 +59,11 @@ $content = apply_filters('the_content', $post->post_content);
 <section class="container-fluid">
 	<div class="row services-row">
 
+			<?php /*
 			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 big-txt">
 				<img class="img-responsive" src="<?php echo get_template_directory_uri() . "/img/svg/jchrois_txt_01.svg"; ?>">
 			</div>
+			 */ ?>
 
 		
 			<div class="col-xs-12 col-md-4">

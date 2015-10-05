@@ -41,8 +41,8 @@ body {
 	font-family: "adobe-garamond-pro";
 	font-size: 14px;
 
-	color: #333;
-	background-color: #f2f2f2;
+	color: #555;
+	background-color: #1a1a1a;
 	margin: 0;
 }
 
@@ -97,13 +97,13 @@ div#preloader {
 
 
 h1 {
-	font-family: "proxima-nova";
+	font-family: "nimbus-sans",sans-serif;
 	font-size: 36px; line-height: 40px;
 	font-weight: 500;
 }
 
 h3 {
-	font-family: "proxima-nova";
+	font-family: "nimbus-sans",sans-serif;
 	font-size: 18px; line-height: 28px;
 	letter-spacing: 12px;
 	text-transform: uppercase;
@@ -112,10 +112,10 @@ h3 {
 
 h4 {
 	font-size: 12px;
-	font-family: "proxima-nova";
-	font-weight: 600;
+	font-family: "nimbus-sans",sans-serif;
+	font-weight: 300;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	line-height: 24px;
 }
 
@@ -127,7 +127,7 @@ a, a:visited, a:link {
 
 .info-txt {
 	font-size: 9px;
-	font-family: "proxima-nova";
+	font-family: "nimbus-sans",sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	line-height: 24px;
@@ -215,7 +215,7 @@ a, a:visited, a:link {
 
 	color: #fff;
 	font-size: 16px;
-	font-family: "proxima-nova";
+	font-family: "nimbus-sans",sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 24px;
@@ -264,7 +264,7 @@ a, a:visited, a:link {
 
 
 #introduction {
-	background: #f1f1f1;
+	background: #1a1a1a;
 }
 
 .introduction-hero {
@@ -277,8 +277,8 @@ a, a:visited, a:link {
 	
 	top: 50%; left: 50%;
     margin-right: 50%;
-    min-width: 100px; width: 50%;
-    min-height: 100px; height: 50%;
+    min-width: 100px; width: 30%;
+    min-height: 100px; height: 30%;
     z-index: 1;
 
     -webkit-transform: translate(-50%, -50%);
@@ -410,8 +410,8 @@ a, a:visited, a:link {
 
 .detail-txt {
 	font-size: 10px;
-	color: #666;
-	font-family: "proxima-nova";
+	color: #444;
+	font-family: "nimbus-sans",sans-serif;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 3px;
@@ -441,7 +441,7 @@ a, a:visited, a:link {
 
 .detail-txt-02 {
 	position: absolute;
-	top: 49%; left: 5%;
+	top: 53%; left: 5%;
 	width: 200px; height: 30px;
 	margin-left: 30px;
 
@@ -455,7 +455,7 @@ a, a:visited, a:link {
 
 .detail-txt-04 {
 	position: absolute;
-	top: 49%; left: 95%;
+	top: 53%; left: 95%;
 	width: 200px; height: 30px;
 
 }
@@ -527,7 +527,7 @@ a, a:visited, a:link {
 }
 
 .services-row {
-	color: #333;
+	color: #444;
 	min-height: 250px;
 	padding-top: 50px;
 	padding-bottom: 100px;
@@ -535,13 +535,13 @@ a, a:visited, a:link {
 }
 
 .services-row h4 {
-	color: #333;
+	color: #fff;
 	margin-bottom: 20px;
 }
 
 .services-row p {
 	letter-spacing: 1px;
-	color: #888;
+	color: #444;
 }
 
 .services-row img {
@@ -586,6 +586,7 @@ a, a:visited, a:link {
 .project-titelbar h3 {
 	position: absolute;
 	margin: 0 0 0 10px;
+	color: #fff;
 
 	top: 5%; left: 50%;
 
@@ -618,7 +619,7 @@ a, a:visited, a:link {
 	width: 100%; height: 100%;
 	top: 25px;
 
-	background-color: #eee;
+	background-color: #0d0d0d;
 	overflow-x: visible;
 }
 
@@ -632,7 +633,7 @@ a, a:visited, a:link {
 	display: inline-block;
 	margin-left: -4px;
 	width: 200px; height: 100%;
-	background-color: #f1f1f1;
+	background-color: #0d0d0d;
 	background-position: center;
 	background-size: cover;
 
@@ -681,8 +682,8 @@ a, a:visited, a:link {
 
 .project-element.inactive h4 {
 	background: none;
-	border: 1px solid #ccc;
-	color: #ccc;
+	border: 1px solid #222;
+	color: #222;
 }
 
 .project-element.inactive h4 span {
@@ -726,7 +727,7 @@ a, a:visited, a:link {
 	position: absolute;
 	z-index: 5;
 	width: 100%; height: 100%;
-	border: 20px solid #f2f2f2;
+	border: 20px solid #1a1a1a;
 
 }
 
@@ -742,14 +743,18 @@ a, a:visited, a:link {
 	z-index: 4;
 	bottom: 0px;
 	width: 100%;
-	background-color: #f2f2f2;
+	background-color: #1a1a1a;
 	color: #444;
 	padding: 30px 40px 70px 40px;
 
 }
 
 .single-project-headerbox h3 {
-	color: #333;
+	color: #fff;
+}
+
+.single-project-headerbox .bold {
+	font-weight: bold;
 }
 
 
@@ -845,8 +850,14 @@ a, a:visited, a:link {
 .single-page-section {
 	width: 100%; height: 100%;
 	padding: 50px;
-	background: #fff;
+	background: #1a1a1a;
+
 }
+
+.single-page-section h1 { 
+	color: #fff;
+}
+
 
 
 /* PART : SINGLE PAGE < ---------------------------------------------------------- */
@@ -862,10 +873,11 @@ a, a:visited, a:link {
 
 .contact-box {
 	padding: 30px 30px 20px 50px;
+	color: #fff;
 }
 
 .contact-box2 {
-	padding: 10px 50px 30px 50px;
+	padding: 10px 100px 30px 50px;
 }
 
 
@@ -877,11 +889,12 @@ a, a:visited, a:link {
 	cursor: pointer;
 
 
-	font-family: "proxima-nova";
+	font-family: "nimbus-sans",sans-serif;
 	font-size: 10px;
 	letter-spacing: 2px;
 	
 }
+
 
 a.mail-bnt {
 	color: #333;
