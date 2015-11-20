@@ -22,6 +22,15 @@ $content = apply_filters('the_content', $post->post_content);
 				<div class="detail-txt detail-txt-04 vertical-txt-up">00 : 00 : 00</div>
 			</div>
 
+
+			<div class="intro-jakob hidden-xs">
+				<img src="<?php echo get_template_directory_uri() . '/img/svg/intro_jakob-01.svg'; ?>">
+			</div>
+
+			<div class="intro-portfolio hidden-xs">
+				<img src="<?php echo get_template_directory_uri() . '/img/svg/intro_jakob-02.svg'; ?>">
+			</div>
+
 			<div class="col-xs-12 col-md-6 col-md-offset-3 full-height">
 
 				<div class="logo-container">
@@ -33,24 +42,6 @@ $content = apply_filters('the_content', $post->post_content);
 
 			</div>
 
-
-			<?php /*
-
-			<div class="overlay-textbox">
-				<div class="overlay-textbox-bnt"></div>
-
-				<div class="overlay-textbox-inner up hidden-xs">
-					<?php echo $content; ?>
-				</div>
-			</div>
-			
-
-
-			<div class="overlay-textbox-mobile visible-xs">
-				<?php echo $content; ?>
-			</div>
-			*/ ?>
-
 		</div>
 
 	</div>
@@ -60,11 +51,10 @@ $content = apply_filters('the_content', $post->post_content);
 <section class="container-fluid">
 	<div class="row services-row">
 
-			<?php /*
-			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 big-txt">
-				<img class="img-responsive" src="<?php echo get_template_directory_uri() . "/img/svg/jchrois_txt_01.svg"; ?>">
+			<div class="mobile-title col-xs-12 visible-xs">
+				<img src="<?php echo get_template_directory_uri() . '/img/svg/intro_jakob-01.svg'; ?>">
+				<img src="<?php echo get_template_directory_uri() . '/img/svg/intro_jakob-02.svg'; ?>">
 			</div>
-			 */ ?>
 
 		
 			<div class="col-xs-12 col-md-4">

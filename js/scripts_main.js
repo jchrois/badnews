@@ -175,6 +175,9 @@
 		TweenMax.staggerFrom($(".logo-part"), 3, {opacity: 0, delay: 0.3, ease:Cubic.easeInOut, force3D:true}, 0.3);
 		TweenMax.staggerFrom($(".detail-txt"), 2, {opacity: 0, backgroundColor: "#ffffff", width: 0, delay: 0, ease:Power4.easeInOut, force3D:true}, 0.1);
 		
+		TweenMax.from($(".intro-jakob"), 3, {opacity: 0, delay: 0, ease:Power4.easeInOut, force3D:true});
+		TweenMax.from($(".intro-portfolio"), 3, {opacity: 0, delay: 0, ease:Power4.easeInOut, force3D:true});
+
 		TweenMax.from($('.overlay-textbox-mobile'), 2, {opacity: 0, delay: 1.5, ease:Power4.easeInOut, force3D:true});
 		TweenMax.from($('.overlay-textbox'), 2, {opacity: 0, backgroundColor: "#ffffff", delay: 1.5, ease:Power4.easeInOut, force3D:true});
 
