@@ -26,7 +26,7 @@
 									<div class="row">
 										<div class="col-sm-6">
 											<a href="<?php the_permalink() ?>">
-												<h3><?php the_title(); ?></h3>
+												<h2><?php the_title(); ?></h2>
 											</a>
 										</div>
 
@@ -62,7 +62,7 @@
 		<section class="container-fluid">
 			<div class="row">
 				<div class="visible-xs single-project-headerbox-mobile">
-					<h3><?php the_title(); ?></h3>
+					<h2><?php the_title(); ?></h2>
 					<?php /* <span class="icon-square"></span> */ ?>
 					Agency: <?php the_field("agency"); ?><br />
 					Client: <?php the_field("client"); ?><br />
@@ -87,6 +87,9 @@
 
 			        elseif( get_row_layout() == 'title' ): 
 			        	get_template_part('parts/project/part', 'project-title');
+
+			         elseif( get_row_layout() == 'text' ): 
+			        	get_template_part('parts/project/part', 'project-text');
 			        	
 			        endif;
        

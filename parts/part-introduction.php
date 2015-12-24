@@ -10,9 +10,11 @@ $content = apply_filters('the_content', $post->post_content);
 
 	<div class="row">
 		
+		<div class="single-project-heroBorder"></div>
+
 		<div class="fullheight-content introduction-hero">
 			
-			<div class="hidden-xs overlay-grid"></div>
+			<?php /* <div class="hidden-xs overlay-grid"></div> */ ?>
 			<div class="overlay-map"></div>
 
 			<div class="detail-txt-container">

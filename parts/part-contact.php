@@ -4,7 +4,7 @@
 	<div class="row">
 
 			<div class="col-sm-6 contact-box">
-				<h3>Contact</h3>
+				<h2>Contact</h2>
 			</div>
 
 			<div class="col-sm-6 hidden-xs contact-box">

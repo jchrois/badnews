@@ -5,7 +5,7 @@
 
 				<div class="col-sm-2 hidden-xs project-titelbar fullheight-content">
 					<?php /* <img class="img-responsive" src="<?php echo get_template_directory_uri() . "/img/svg/logo.svg"; ?>"> */ ?>
-					<h3>projects</h3>
+					<h2>Projects</h2>
 				</div>
 
 				<div class="col-sm-10 no-padding">
