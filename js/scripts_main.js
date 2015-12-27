@@ -6,8 +6,8 @@
 		init();
 
 		function init() {
-			//scrollHandler();
 			
+			/*
 			if ($('.projects-inner').length) {
 				Draggable.create(".projects-inner",  {
 				type:"scrollLeft", 
@@ -18,6 +18,7 @@
 
 				$('.projects-inner').css('overflowX', 'visible');
 			}
+			*/
 			
 
 		}
@@ -41,9 +42,6 @@
 
 		function scrollHandler() {
 			
-			//scrollSpy(".txtbox-animate", animateTxtBoxIn, animateTxtBoxOut);
-			//scrollSpy(".projects-container", onScrollProjectsIn, onScrollProjectsOut);
-
 		}
 
 
@@ -211,18 +209,8 @@
 		}
 
 
-
-
-		TweenMax.to($(".overlay-smoke-inner"), 60, {left: "+=1600px", repeat: -1, ease: Linear.easeNone, force3D:true } );
-		TweenMax.to($(".overlay-noise-inner"), 60, {left: "+=600px", repeat: -1, ease: Linear.easeNone, force3D:true } );
-
 		/* Introduction block  ---------------------------------------------------------- */
 		
-
-
-
-
-
 
 
 

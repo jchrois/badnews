@@ -58,7 +58,6 @@ $content = apply_filters('the_content', $post->post_content);
 				<img src="<?php echo get_template_directory_uri() . '/img/svg/intro_jakob-02.svg'; ?>">
 			</div>
 
-		
 			<div class="col-xs-12 col-md-4">
 				<img class="img-responsive" src="<?php echo get_template_directory_uri() . "/img/svg/movies-mark.svg"; ?>">
 				<h4>MOTION GRAPHICS</h4>
