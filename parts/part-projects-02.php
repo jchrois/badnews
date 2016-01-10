@@ -39,7 +39,8 @@
 														$heroimage = get_field('hero_image');
 												?>	
 															
-															<a class="project-element" href="<?php the_permalink() ?>" style="background-image: url('<?php echo $heroimage['url']; ?>');"><h4><?php the_title(); ?></h4></a> 
+															<a class="project-element hidden-xs" href="<?php the_permalink() ?>" style="background-image: url('<?php echo $heroimage['url']; ?>');"><h4><?php the_title(); ?></h4></a>
+															<a class="project-element-mobile visible-xs" href="<?php the_permalink() ?>" style="background-image: url('<?php echo $heroimage['url']; ?>');"><h4><?php the_title(); ?></h4></a>  
 
 														<?php $counter++; ?>
 

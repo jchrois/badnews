@@ -666,7 +666,17 @@ a, a:visited, a:link {
 .project-element {
 	display: block;
 	margin-left: -4px;
-	width: 100%; height: 200px;
+	width: 100%; height: 300px;
+	background-color: #0d0d0d;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.project-element-mobile {
+	display: block;
+	margin-left: -4px;
+	width: 100%; height: 300px;
 	background-color: #0d0d0d;
 	background-position: center;
 	background-size: cover;
@@ -684,19 +694,45 @@ a, a:visited, a:link {
 }
 
 
+
 .project-element h4, .project-element.inactive h4  {
 	position: relative;
-	top: 50%; left: 5%;
-	width: 350px; height: 50px;
+	top: 0%; left: 0%;
+	width: 300px; height: 50px;
 	
 	padding: 12px 30px 10px 30px;
 	margin: 0;
-	color: #333;
-	background-color: #f1f1f1;
+	color: #fff;
+	background-color: #1a1a1a;;
+	text-align: center;
 
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	/* 
+   -ms-transform: rotate(90deg);
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: 0% 0%;
+    */
+    transform-origin: 0% 0%;
+    transform: translate(50px, 0) rotate(90deg) ;
+
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+
+}
+
+.project-element-mobile h4, .project-element-mobile.inactive h4  {
+	position: relative;
+	top: 0%; left: 0%;
+	width: 100%; height: 50px;
+	
+	padding: 12px 30px 10px 30px;
+	margin: 0;
+	color: #fff;
+	background-color: #1a1a1a;;
+	text-align: center;
+
+    opacity: 0.75;
+    filter: alpha(opacity=75);
 
 }
 
