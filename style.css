@@ -18,8 +18,6 @@
 
 
 
-
-
 /* global box-sizing */
 *,
 *:after,
@@ -40,7 +38,6 @@ body {
 	
 	font-family: "adobe-garamond-pro";
 	font-size: 14px;
-
 	color: #555;
 	background-color: #1a1a1a;
 	margin: 0;
@@ -85,6 +82,17 @@ canvas {
 }
 
 
+.frame {
+	position: fixed;
+	z-index: 100;
+	width: 100%; height: 100%;
+	border: 20px solid #000;
+	pointer-events: none;
+
+	opacity: 0.50;
+    filter: alpha(opacity=50);
+
+}
 
 
 
@@ -119,7 +127,7 @@ h3 {
 h4 {
 	font-size: 12px;
 	font-family: "nimbus-sans",sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	line-height: 24px;
@@ -299,7 +307,7 @@ a, a:visited, a:link {
 	margin-top: 0px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-bottom: 70px; 
+	margin-bottom: 50px; 
 }
 
 .services-row .mobile-title img {
@@ -636,6 +644,15 @@ a, a:visited, a:link {
 
 }
 
+.project-titelbar-mobile {
+	text-align: center;
+	background-color: #1e1e1e;
+	padding: 40px;
+}
+
+.project-titelbar-mobile h2 {
+	margin: 0;
+}
 
 
 
@@ -649,18 +666,17 @@ a, a:visited, a:link {
 .projects-inner {
 	position: relative;
 	width: 100%;
-	top: 25px;
 
 	background-color: #0d0d0d;
 	overflow-x: visible;
 }
 
 
+
+
 .projects-inner div {
 	height: 100%;
 }
-
-
 
 
 .project-element {
@@ -675,22 +691,21 @@ a, a:visited, a:link {
 
 .project-element-mobile {
 	display: block;
-	margin-left: -4px;
-	width: 100%; height: 300px;
+	width: 100%; height: 600px;
 	background-color: #0d0d0d;
 	background-position: center;
-	background-size: cover;
+	background-size: cover;	
 
 }
 
 
-.project-element:hover, .project-element.inactive:hover {
+.project-element:hover, .project-element:visited, .project-element:active, .project-element:link, .project-element.inactive:hover {
 	text-decoration: none;
 }
 
 .project-element:hover h4 {
-	background-color: #6666ff;
-	color: #fff;
+	background-color: #fff;
+	color: #1e1e1e;
 }
 
 
@@ -703,7 +718,7 @@ a, a:visited, a:link {
 	padding: 12px 30px 10px 30px;
 	margin: 0;
 	color: #fff;
-	background-color: #1a1a1a;;
+	background-color: #1a1a1a;
 	text-align: center;
 
 	/* 
@@ -725,14 +740,14 @@ a, a:visited, a:link {
 	top: 0%; left: 0%;
 	width: 100%; height: 50px;
 	
-	padding: 12px 30px 10px 30px;
+	padding: 15px 30px 15px 30px;
 	margin: 0;
 	color: #fff;
-	background-color: #1a1a1a;;
+	background-color: #1a1a1a;
 	text-align: center;
 
-    opacity: 0.75;
-    filter: alpha(opacity=75);
+	opacity: 0.95;
+    filter: alpha(opacity=95);
 
 }
 
@@ -781,23 +796,13 @@ a, a:visited, a:link {
 	
 }
 
+
 .single-project-heroImage {
 	background-size: cover; 
 	background-position: center;
 	padding: 0;
-
 }
 
-.single-project-heroBorder {
-	position: fixed;
-	z-index: 5;
-	width: 100%; height: 100%;
-	border: 20px solid #111;
-	opacity: 0.90;
-    filter: alpha(opacity=90);
-    pointer-events: none;
-
-}
 
 .single-project-headerbox-container {
 	position: absolute;
@@ -812,31 +817,60 @@ a, a:visited, a:link {
 	bottom: 0px;
 	width: 100%;
 	background-color: #1a1a1a;
+	background-image: url('img/_theme/city-map.png');
 	color: #444;
-	padding: 30px 40px 70px 60px;
+	padding: 50px 40px 60px 80px;
 
 	opacity: 0.95;
     filter: alpha(opacity=95);
 
 }
 
-
-
-
-
-
-.single-project-headerbox h3, .single-project-headerbox-mobile h3 {
-	color: #fff;
+.single-project-headerbox h2 {
+	margin: 0;
+	padding: 0;
 }
+
+
+.small-cross {
+	position: absolute;
+	width: 15px; height: 15px;
+	left: -8px; top: -5px;
+	background-size: cover;
+	background-image: url('img/svg/small-cross.svg');
+}
+
+
 
 .single-project-headerbox .bold {
 	font-weight: bold;
 }
 
 
+
+
 .single-project-headerbox-mobile {
 	padding: 25px 40px 60px 50px;
+	background-image: url('img/_theme/city-map.png');
+	background-position: top;
 	background-color: #1a1a1a;
+}
+
+
+
+.small-cross {
+	position: absolute;
+	width: 15px; height: 15px;
+	left: -8px; top: -5px;
+	background-size: cover;
+	background-image: url('img/svg/small-cross.svg');
+}
+
+@media (max-width: 480px) {
+	.small-cross {
+		position: relative;
+		left: -15px; top: 15px;
+	}
 }
 
 
@@ -844,11 +878,9 @@ a, a:visited, a:link {
 	bottom: -50%;
 }
 
-
 .openClose-bnt {
 	background: #222;
 	width: 100px; height: 15px;
-
 }
 
 .single-project-headerbox .openClose-bnt {
@@ -861,50 +893,94 @@ a, a:visited, a:link {
 }
 
 
-.headerbox-bnt {
-	position: absolute;
-	z-index: 6;
-	bottom: 0; right: 5%;
-	margin: 0 0 -1px;
+.single-project h4 {
+	color: #fff;
+	margin: 0;
+}
 
-	width: 150px; height: 21px;
-	background: #000;
+
+
+
+
+
+.single-project-text {
+	background-color: #fff;
+	color: #666;
+	padding: 50px 40px 40px 80px;
+}
+
+@media (max-width: 480px) { 
+	.single-project-text {
+		padding: 50px 50px 40px 50px;
+	}
+}
+
+.single-project-text h4 {
+	color: #1e1e1e;
+	margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+.single-project-nextprev {
+	position: relative;
+	height: 100px;
+	background-color: #fff;
+	padding: 0px;
+}
+
+.single-project-nextprev a {
+	height: 100%;
+	width: 100%;
+	padding: 30px 80px 0px 80px;
+
+	display: block;
+	color: #1e1e1e;
 	cursor: pointer;
 
+	font-family: "nimbus-sans",sans-serif;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+
 }
 
-
-
-
-.single-project-title {
-	background-color: #111;
-	padding: 5px 40px 3px 50px;
-}
-
-.single-project-title h3 {
-	color: #555;
+.single-project-nextprev a span {
 	font-size: 8px;
-	margin: 0;
+	font-weight: bold;
+}
 
+
+.single-project-nextprev .next-bnt a {
+
+}
+
+
+.single-project-nextprev a:hover, .single-project-nextprev a:active {
+	background-color: #1e1e1e;
+	color: #fff;
+	text-decoration: none;
+}
+
+.single-project-nextprev a:visited {
+	text-decoration: none;
+}
+
+.next-bnt, .prev-bnt {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-
-}
-
-
-.single-project-content {
-	background-color: #222222;
-	padding: 40px 100px 40px 60px;
-	border-left: 20px solid #333;
 }
 
 
 
 
-.single-project h4 {
-	color: #fff;
-}
+
 
 
 .embed-container { 
@@ -927,6 +1003,8 @@ a, a:visited, a:link {
 }
 
 
+
+
 /* PART : SINGLE PROJECT < ---------------------------------------------------------- */
 
 
@@ -941,9 +1019,6 @@ a, a:visited, a:link {
 
 }
 
-.single-page-section h1 { 
-	color: #fff;
-}
 
 
 
@@ -952,21 +1027,13 @@ a, a:visited, a:link {
 
 
 .contact-section {
-	padding-bottom: 70px;
+	padding: 70px 30px 70px 80px;
 
 }
 
-
-
-.contact-box {
-	padding: 30px 30px 20px 60px;
-	color: #fff;
+.contact-section h2 {
+	margin-top: 0;
 }
-
-.contact-box2 {
-	padding: 10px 100px 30px 60px;
-}
-
 
 .mail-bnt {
 	display: block;
@@ -975,7 +1042,6 @@ a, a:visited, a:link {
 	padding: 10px;
 	cursor: pointer;
 
-
 	font-family: "nimbus-sans",sans-serif;
 	font-size: 10px;
 	letter-spacing: 2px;
@@ -983,168 +1049,33 @@ a, a:visited, a:link {
 }
 
 
+@media (max-width: 480px) {
+	.contact-section {
+		padding: 70px 50px 50px 50px;
+	}
+
+	.mail-bnt { 
+		width: 100%;
+	}
+
+}
+
+
 a.mail-bnt {
 	color: #333;
+	margin-bottom: 40px;
 }
 
 .mail-bnt:hover, .mail-bnt:active, .mail-bnt:visited {
-	background-color: #6666ff;
+	background-color: #1e1e1e;
 	color: #fff;
 	text-decoration: none;
 } 
 
 
-
-
-
-
-
-
-
-
 .footer {
-	position: fixed;
-	height: 40px;
-	padding: 20px 20px 30px 20px;
-	left: 0; bottom: 0;
-	width: 100%;
-	background: none;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* PART: TEST  > ---------------------------------------------------------- */
-
-
-
-
-
-.test-container {
-	position: relative;
-	background-color: #000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.txtbox1 {
-	position: relative;
-	width: 100%;
-	top: 0%;
-}
-
-
-.txtbox2 {
-	position: relative;
-	width: 100%;
-	top: 25%;
-}
-
-.txtbox3 {
-	position: relative;
-	width: 100%;
-	top: 50%;
-}
-
-
-.txtbox-animate {
-	overflow: hidden;
-
-	padding: 20px;
-	background-color: #eeeeee;
-}
-
-
-
-
-
-
-
-
-#scroller {
-	height: 300px;
-	background-color: #fff;
-	white-space: nowrap;
-}
-
-#scroller-wrap {
-	height: 280px;
-	width: 100%;
-	overflow: hidden;
-}
-
-
-.box {
-	background-color: #ff0000;
-	width: 500px; height: 300px;
-	display: inline-block;
-	margin-left: -4px;
-}
-
-
-/* PART: TEST  < ---------------------------------------------------------- */
-
-
-
-
-
-
-
-/* PART2: TEST  > ---------------------------------------------------------- */
-
-
-#test2 {
-	background-color: #ff0000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

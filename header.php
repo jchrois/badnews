@@ -42,6 +42,8 @@
 
 		</nav>
 
+		<div class="fullheight-content frame hidden-xs"></div>
+
 		<?php endif; ?>
 
 		

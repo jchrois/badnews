@@ -14,7 +14,6 @@ $content = apply_filters('the_content', $post->post_content);
 
 		<div class="fullheight-content introduction-hero">
 			
-			<?php /* <div class="hidden-xs overlay-grid"></div> */ ?>
 			<div class="overlay-map"></div>
 
 			<div class="detail-txt-container">
@@ -23,7 +22,6 @@ $content = apply_filters('the_content', $post->post_content);
 				<div class="detail-txt detail-txt-03 vertical-txt-up">JAKOB CHRØIS</div>
 				<div class="detail-txt detail-txt-04 vertical-txt-up">00 : 00 : 00</div>
 			</div>
-
 
 			<div class="intro-jakob hidden-xs">
 				<img src="<?php echo get_template_directory_uri() . '/img/svg/intro_jakob-01.svg'; ?>">

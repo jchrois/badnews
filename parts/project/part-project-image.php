@@ -5,7 +5,7 @@
 
 ?>
 
-<section class="container-fluid">
+<section class="container-fluid single-project-image">
 	
 	<div class="row">
 		<div class="col-xs-12 col-nopadding">

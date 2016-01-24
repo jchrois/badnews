@@ -42,15 +42,14 @@ function header_scripts()
         wp_enqueue_script('tweenmax');
 
 
-
-
         wp_register_script('three', 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js', array(), '1.70.0'); 
         wp_enqueue_script('three');
 
 
-
+        /*
         wp_register_script('jc_three', get_template_directory_uri() . '/js/lib/JC/ThreeJSCanvas.js', array('three'), '1.0.0');
         wp_enqueue_script('jc_three');
+        */
 
         wp_register_script('scripts_main', get_template_directory_uri() . '/js/scripts_main.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scripts_main');
@@ -382,7 +381,7 @@ function create_post_type_projects()
             'not_found_in_trash' => __('No Projects found in Trash', 'project')
         ),
         'public' => true,
-        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'hierarchical' => false, // Allows your posts to behave like Hierarchy Pages
         'has_archive' => true,
         'supports' => array(
             'title',
