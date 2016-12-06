@@ -98,16 +98,15 @@
 <?php endif; ?>
 
 
-<?php /*
 
 <section class="container-fluid single-project-nextprev">
 	<div class="row full-height">
-		<div class="col-xs-2 prev-bnt full-height"><?php next_post_link("%link", "<span>Next:</span><br/> %title"); ?></div>
-		<div class="col-xs-2 col-xs-offset-8 next-bnt full-height"><?php previous_post_link("%link","<span>Previous:</span><br/> %title"); ?></div>
+		<div class="col-xs-6 next-bnt full-height"><?php next_post_link("%link", "<span>Next:</span><br/> %title"); ?></div>
+		 <div class="col-xs-6 prev-bnt full-height"><?php previous_post_link("%link","<span>Previous:</span><br/> %title"); ?></div>
 	</div>
 </section>
 
-*/ ?>
+
 
 <?php get_template_part('parts/part', 'contact'); ?>
 
