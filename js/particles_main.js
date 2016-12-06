@@ -11,7 +11,7 @@
 				    "number": {
 				      "value": 50,
 				      "density": {
-				        "enable": true,
+				        "enable": false,
 				        "value_area": 800
 				      }
 				    },
@@ -34,7 +34,7 @@
 				      }
 				    },
 				    "opacity": {
-				      "value": 0.3,
+				      "value": 0.5,
 				      "random": true,
 				      "anim": {
 				        "enable": true,
@@ -62,7 +62,7 @@
 				    },
 				    "move": {
 				      "enable": true,
-				      "speed": 0.8,
+				      "speed": 0.4,
 				      "direction": "none",
 				      "random": true,
 				      "straight": false,
