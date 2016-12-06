@@ -538,7 +538,15 @@ a, a:visited, a:link {
 }
 
 
-
+#particles-js{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: none;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
 
 
 
@@ -1050,11 +1058,6 @@ a, a:visited, a:link {
 
 
 
-
-
-
-
-
 .embed-container { 
 		position: relative; 
 		padding-bottom: 56.25%;
@@ -1087,16 +1090,28 @@ a, a:visited, a:link {
 @media (max-width: 480px) {
 	.page-section {
 		padding-top: 50px;
+		padding-bottom: 30px;
 	}
 }
+
+
 
 .single-page-content {
 
 	width: 100%;
-	padding: 50px;
+	padding: 70px;
 	background: #1a1a1a;
 
 }
+
+@media (max-width: 480px) {
+	.single-page-content {
+		padding: 25px;
+	}
+}
+
+
+
 
 .single-page-content span.highlight {
 	background-color: #fff;

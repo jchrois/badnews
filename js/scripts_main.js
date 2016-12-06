@@ -6,22 +6,9 @@
 		init();
 
 		function init() {
-			
-			/*
-			if ($('.projects-inner').length) {
-				Draggable.create(".projects-inner",  {
-				type:"scrollLeft", 
-				throwProps:true, 
-				edgeResistance:0.5,
-				dragClickables:true,
-				});
-
-				$('.projects-inner').css('overflowX', 'visible');
-			}
-			*/
-			
-
+					
 		}
+
 
 
 
@@ -306,11 +293,6 @@
 
 
 		/* animation < -------------------------------------------------- */
-
-
-
-
-
 
 
 

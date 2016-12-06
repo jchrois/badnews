@@ -30,40 +30,49 @@ function header_scripts()
         wp_register_script('bootstrap', get_template_directory_uri() . '/js/lib/bootstrap.js', array('jquery'), '3.3.2'); 
         wp_enqueue_script('bootstrap');
 
-
-
-        wp_register_script('throwprops', get_template_directory_uri() . '/js/lib/greensock/plugins/ThrowPropsPlugin.min.js', array(), '1.16.1'); 
-        wp_enqueue_script('throwprops');
-
-        wp_register_script('draggable', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/utils/Draggable.min.js', array(), '1.16.0'); 
-        wp_enqueue_script('draggable');
-
         wp_register_script('tweenmax', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js', array(), '1.16.0'); 
         wp_enqueue_script('tweenmax');
 
+        wp_register_script('particles', get_template_directory_uri() . '/js/lib/particles.min.js', array(), '1.16.0'); 
+        wp_enqueue_script('particles');
 
-        wp_register_script('three', 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js', array(), '1.70.0'); 
-        wp_enqueue_script('three');
-
-
-        /*
-        wp_register_script('jc_three', get_template_directory_uri() . '/js/lib/JC/ThreeJSCanvas.js', array('three'), '1.0.0');
-        wp_enqueue_script('jc_three');
-        */
 
         wp_register_script('scripts_main', get_template_directory_uri() . '/js/scripts_main.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scripts_main');
-
-        wp_register_script('three_main', get_template_directory_uri() . '/js/three_main.js', array('three'), '1.0.0');
-        wp_enqueue_script('three_main');
 
 
         $wnm_custom = array( 'template_url' => get_bloginfo('template_url') );
         wp_localize_script( 'three_main', 'wnm_custom', $wnm_custom );
 
+        
 
+        
+        wp_enqueue_script('particles_main');
+        
     }
+
 }
+
+
+
+
+function load_scripts() {
+    global $post;
+    wp_register_script('particles_main', get_template_directory_uri() . '/js/particles_main.js', array(), '1.0'); 
+
+    if( is_home() ) {
+        wp_enqueue_script('particles_main');
+
+    } 
+}
+
+add_action('wp_enqueue_scripts', 'load_scripts');
+
+
+
+
+
+
 
 
 function styles()
