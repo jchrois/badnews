@@ -1,4 +1,4 @@
-<section id="projects" class="container-fluid">
+<section id="projects" class="container-fluid projects-section">
 
 	<div class="row">
 
@@ -9,7 +9,6 @@
 				<div class="col-xs-12 visible-xs project-titelbar-mobile">
 					<h2>Projects</h2>
 				</div>
-
 
 
 				<div class="col-sm-10 no-padding">

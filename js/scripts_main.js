@@ -86,9 +86,11 @@
 
 
 		$('.nav-bnt').click(nav_open);
+		$('.nav-menu').click(nav_open);
 
 		function nav_open() {
-			var nav = $(this).parent();
+
+			var nav = $(".nav-container");
 			
 			if($(nav).hasClass('open')) {
 				//open
@@ -103,6 +105,8 @@
 			}
 
 		}
+
+
 
 
 
