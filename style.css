@@ -882,7 +882,7 @@ a, a:visited, a:link {
 	bottom: 0px;
 	width: 100%;
 	background-color: #1a1a1a;
-	background-image: url('img/_theme/city-map.png');
+	background-image: url('img/_theme/city-map_02.png');
 	color: #444;
 	padding: 50px 40px 60px 80px;
 
@@ -916,7 +916,7 @@ a, a:visited, a:link {
 
 .single-project-headerbox-mobile {
 	padding: 25px 40px 60px 50px;
-	background-image: url('img/_theme/city-map.png');
+	background-image: url('img/_theme/city-map_02.png');
 	background-position: top;
 	background-color: #1a1a1a;
 }
