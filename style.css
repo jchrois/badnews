@@ -139,6 +139,10 @@ a, a:visited, a:link {
 	padding: 0px 3px 0px 3px;
 }
 
+a:hover {
+	text-decoration: none;
+	background-color: #ccc;
+}
 
 
 .info-txt {
