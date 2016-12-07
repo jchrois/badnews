@@ -79,6 +79,9 @@
 			        elseif( get_row_layout() == 'gallery' ): 
 			        	get_template_part('parts/project/part', 'project-gallery');
 			        	
+			        elseif( get_row_layout() == 'image_slider' ): 
+			        	get_template_part('parts/project/part', 'project-image-slider');
+			        	
 			        endif;
        
 			    endwhile;
@@ -101,11 +104,11 @@
 
 <section class="container-fluid single-project-nextprev">
 	<div class="row full-height">
-		<div class="col-sm-6 next-bnt hidden-xs full-height"><?php next_post_link("%link", "<span>Next</span><br/> %title"); ?></div>
-		<div class="col-sm-6 prev-bnt hidden-xs full-height"><?php previous_post_link("%link","<span>Previous</span><br/> %title"); ?></div>
+		<div class="col-sm-6 next-bnt hidden-xs full-height"><?php next_post_link("%link", "<span>Previous</span><br/> %title"); ?></div>
+		<div class="col-sm-6 prev-bnt hidden-xs full-height"><?php previous_post_link("%link","<span>Next</span><br/> %title"); ?></div>
 
-		<div class="col-xs-6 next-bnt visible-xs full-height"><?php next_post_link("%link", "<span>Next</span>"); ?></div>
-		<div class="col-xs-6 prev-bnt visible-xs full-height"><?php previous_post_link("%link","<span>Previous</span>"); ?></div>
+		<div class="col-xs-6 next-bnt visible-xs full-height"><?php next_post_link("%link", "<span>Previous</span>"); ?></div>
+		<div class="col-xs-6 prev-bnt visible-xs full-height"><?php previous_post_link("%link","<span>Next</span>"); ?></div>
 	</div>
 </section>
 
