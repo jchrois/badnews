@@ -134,7 +134,9 @@ h4 {
 }
 
 a, a:visited, a:link {
-	color: #6666ff;
+	background-color: #1e1e1e;
+	color: #fff;
+	padding: 0px 3px 0px 3px;
 }
 
 
