@@ -38,7 +38,7 @@
 <?php endif; ?>
 
 
-<?php get_template_part('parts/part', 'projects-row'); ?>
+<?php //get_template_part('parts/part', 'projects-row'); ?>
 
 
 <?php get_template_part('parts/part', 'contact'); ?>
